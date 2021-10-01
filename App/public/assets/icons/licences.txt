@@ -1,0 +1,4 @@
+ic_theme.svg : Science by Denis Shumaylov from the Noun Project
+ic_earth.svg : Earth by popcornarts from the Noun Project
+ic_space.svg : Space by Adrien Coquet from the Noun Project
+ic_ocean.svg : Ocean by IconPai from the Noun Project

@@ -1,0 +1,16 @@
+body, html {
+    height: 100%;
+}
+
+body {    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    background: #070736;
+}
+
+#cy {
+    height: 90%;
+    width: 90%;    
+}

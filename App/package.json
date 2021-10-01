@@ -1,0 +1,31 @@
+{
+  "name": "webapp",
+  "version": "1.0.0",
+  "description": "Nasa Space Challenge - AIACSPACE - WebApp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khadijalahy1/NasaSpaceApps2021-aiacSpace.git"
+  },
+  "keywords": [
+    "nasa",
+    "space",
+    "aiacspace",
+    "ontologies",
+    "webapp",
+    "network",
+    "visualisation"
+  ],
+  "author": "AIACSPACE",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/khadijalahy1/NasaSpaceApps2021-aiacSpace/issues"
+  },
+  "homepage": "https://github.com/khadijalahy1/NasaSpaceApps2021-aiacSpace#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
