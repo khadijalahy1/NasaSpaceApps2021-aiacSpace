@@ -32,7 +32,7 @@ var cy = cytoscape({
 
 cy.domNode();
 
-let addNode = (id, icon, text, parentId) => {
+let addNode = (id, icon, text, parentId, onClickCallback) => {
   let node = document.createElement("div");
   node.className = 'node';
 
@@ -50,6 +50,8 @@ let addNode = (id, icon, text, parentId) => {
 
   node.addEventListener('click', (e) => {
     e.currentTarget.classList.add("forked");
+    if(onClickCallback)
+      onClickCallback();
   });
 
   cy.add({ group: 'nodes', data: { id: id, dom: node } });
@@ -57,19 +59,24 @@ let addNode = (id, icon, text, parentId) => {
   if (parentId) {
     cy.add({ group: 'edges', data: { source: parentId, target: id } });
   }
-
 }
 
-addNode("all", "./assets/icons/ic_all.svg", "All datasets")
+addNode("all", "./assets/icons/ic_all.svg", "Datasets", null, () => {
+  addNode("space", "./assets/icons/ic_space.svg", "Space", "all");
+  addNode("earth", "./assets/icons/ic_earth.svg", "Earth", "all");
+  addNode("ocean", "./assets/icons/ic_ocean.svg", "Ocean", "all");
 
-addNode("space", "./assets/icons/ic_space.svg", "Space", "all")
-addNode("earth", "./assets/icons/ic_earth.svg", "Earth", "all")
-addNode("ocean", "./assets/icons/ic_ocean.svg", "Ocean", "all")
+  cy.layout({
+    name: 'concentric',
+    fit: false,
+    minNodeSpacing: 200,
+    randomize: true,
+    padding: 100,
+    animate: true,
+    animationDuration: 250
+  }).run()
+  
+})
 
-cy.layout({
-  name: 'concentric',
-  fit: false,
-  minNodeSpacing: 200,
-  padding: 100,
-}).run()
+cy.center()
 
