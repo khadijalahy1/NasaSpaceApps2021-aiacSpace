@@ -25,10 +25,6 @@ body {
     transition: border-radius 250ms ease-in-out;
 }
 
-.node.forked {
-    border: 5px solid #FFF;
-}
-
 .node-dom {
     display: flex;
     flex-direction: column;
@@ -51,9 +47,12 @@ body {
 }
 
 .node-dom > span {
+    margin: 10px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;    
     font-size: 14px;
     font-weight: bold;  
+    text-align: center;
+    word-break: break-word;
 }
 
 .pick-filter-menu {

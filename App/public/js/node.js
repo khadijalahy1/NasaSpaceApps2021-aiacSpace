@@ -3,12 +3,18 @@
 
 
 class Node {
-  constructor(filterValueId, parent = null) {
+  constructor(filterId, filterValueId, parent = null, showIconOnly = true) {
 
     this.id = filterValueId;
-    this.icon = FiltersValues.Icon(filterValueId)
-    this.text = FiltersValues.Name(filterValueId);    
-    this.filter = FiltersValues.Filter(filterValueId);
+    this.icon = FiltersValues.Icon(filterValueId);
+    if (!this.icon || !showIconOnly)
+      this.text = FiltersValues.Name(filterValueId);
+
+    // this.filter is the filter that gived this node.
+    this.filter = filterId;
+
+    // this.forkedFilter is the filter that this node is currently forking
+    this.forkedFilter = null;
 
     this.parent = parent;
 
@@ -19,20 +25,23 @@ class Node {
     content.className = 'node-dom';
     this.dom.appendChild(content);
 
-    let iconElm = document.createElement("img");
-    iconElm.src = this.icon;
-    content.appendChild(iconElm);
+    if (this.icon) {
+      let iconElm = document.createElement("img");
+      iconElm.src = this.icon;
+      content.appendChild(iconElm);
+    }
 
     let textElm = document.createElement("span");
     textElm.textContent = this.text;
     content.appendChild(textElm);
 
-    this.dom.addEventListener('click', (e) => { e.stopPropagation(); this.onClick() });
+    this.dom.addEventListener('click', (e) => { this.onClick() });
+    this.dom.addEventListener('dblclick', (e) => { this.onDoubleClick() });
 
-    cy.add({ group: 'nodes', data: { id: this.id, dom: this.dom } });
+    this.graphNode = cy.add({ group: 'nodes', data: { id: this.id, dom: this.dom } });
 
     if (this.parent) {
-      cy.add({ group: 'edges', data: { source: this.parent.id, target: this.id } });
+      cy.add({ group: 'edges', data: { source: this.parent.id, target: this.id, color: Filters.Color(this.filter) } });
     }
 
     this.picker = new FilterPicker(this, (e) => { this.onFilterSelected(e) });
@@ -54,15 +63,49 @@ class Node {
 
   remove() {
     this.picker.destroy();
+    this.graphNode.remove();
+    this.dom.remove();
   }
 
   onClick() {
     console.log("clicked: " + this.id);
   }
 
+  onDoubleClick() {
+    this.unFork();
+  }
+
   onFilterSelected(filterId) {
-    // TODO: fork here
-    console.log(filterId);
-    e.currentTarget.classList.add("forked");            
+    this.forkOn(filterId);
+    Cytoscape.DoLayout();
+  }
+
+  clearChildNodes() {
+    if (this.childNodes)
+      this.childNodes.forEach(node => node.remove())
+
+    this.childNodes = [];
+  }
+
+  forkOn(filterId) {
+    if (this.forkedFilter === filterId)
+      return;
+
+    this.clearChildNodes();
+
+    this.forkedFilter = filterId;
+    this.childNodes = [];
+
+    this.dom.style.border = `5px solid ${Filters.Color(filterId)}`;
+
+    Filters.Values(filterId).forEach((valueId) => {
+      this.childNodes.push(new Node(filterId, valueId, this));
+    });
+  }
+
+  unFork() {
+    this.forkedFilter = null;
+    this.clearChildNodes();
+    this.dom.style.border = 'none';
   }
 }

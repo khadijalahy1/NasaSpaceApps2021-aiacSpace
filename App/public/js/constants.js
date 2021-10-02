@@ -5,7 +5,7 @@ const _Filters = {
         icon: '/assets/icons/filters/ic_theme.svg',
         color: '#ac963e',
         values: [
-            "earth", "science"
+            "earth", "ocean", "space"
         ]
     },
 
@@ -15,7 +15,7 @@ const _Filters = {
         icon: '/assets/icons/filters/ic_source.svg',
         color: '#b85abe',
         values: [
-            
+
         ]
     },
 
@@ -25,8 +25,8 @@ const _Filters = {
         icon: '/assets/icons/filters/ic_param.svg',
         color: '#5ea758',
         values: [
-
-        ]  
+            "temperature", "density", "salinity", "wavelengths", "SSHA", "GPS orbit", "pressure", "radiation", "precipitation", "concentration", "water vapor", "pH", "conductivity"
+        ]
     },
 
     audience: {
@@ -35,7 +35,7 @@ const _Filters = {
         icon: '/assets/icons/filters/ic_audience.svg',
         color: '#7278cb',
         values: [
-
+            "programming", "research", "business", "education", "art"
         ]
     },
 
@@ -45,9 +45,13 @@ const _Filters = {
         icon: '/assets/icons/filters/ic_speciality.svg',
         color: '#cb6242',
         ascensor: 'audience',
-        values: [
-
-        ]
+        values: {
+            programming: ["development", "software", "AI", "ML"],
+            research: ["biology", "chemistry", "biology", "meteorology", "geology", "astronomy", "mathematics"],
+            business: ["agriculture", "maritim", "defense", "software"],
+            education: ["chemistry", "biology", "physics", "geology", "management", "mathematics", "astronomy"],
+            art: []
+        }
     },
 
     format: {
@@ -56,8 +60,8 @@ const _Filters = {
         icon: '/assets/icons/filters/ic_format.svg',
         color: '#45b2c4',
         values: [
-
-        ]  
+            "text/html", "text/csv", "image/jpeg", "image/html", "image/png", "application/pdf", "application/msword"
+        ]
     },
 
     language: {
@@ -67,33 +71,111 @@ const _Filters = {
         color: '#c75b83',
         values: [
 
-        ] 
+        ]
     },
 }
 
 const _FiltersValues = {
     // None
     all: {
-        filter: "null",
         name: "Datasets",
-        icon: "/assets/icons/filters-values/ic_all.svg"
+        icon: "/assets/icons/filters/all/ic_all.svg"
     },
     // Theme
     earth: {
-        filter: "theme",
         name: "Earth",
-        icon: "/assets/icons/filters-values/ic_earth.svg"
+        icon: "/assets/icons/filters/theme/ic_earth.svg"
     },
     ocean: {
-        filter: "theme",
         name: "Ocean",
-        icon: "/assets/icons/filters-values/ic_ocean.svg"
+        icon: "/assets/icons/filters/theme/ic_ocean.svg"
     },
     space: {
-        filter: "theme",
         name: "Space",
-        icon: "/assets/icons/filters-values/ic_space.svg"
-    }
+        icon: "/assets/icons/filters/theme/ic_space.svg"
+    },
+
+    // Parameter
+    temperature: {
+        name: "Temperature"
+    },
+    density: {
+        name: "Density"
+    },
+    salinity: {
+        name: "Salinity"
+    },
+    wavelengths: {
+        name: "Wave lengths"
+    },
+    SSHA: {
+        name: "SSHA"
+    },
+    "GPS orbit": {
+        name: "GPS orbit"
+    },
+    pressure: {
+        name: "Pressure"
+    },
+    radiation: {
+        name: "Radiation"
+    },
+    precipitation: {
+        name: "Precipitation"
+    },
+    concentration: {
+        name: "Concentration"
+    },
+    "water vapor": {
+        name: "Water vapor"
+    },
+    pH: {
+        name: "pH"
+    },
+    conductivity: {
+        name: "Conductivity"
+    },
+
+    // Audience
+    programming: {
+        name: "Programming"
+    },
+    research: {
+        name: "Programming"
+    },
+    business: {
+        name: "Programming"
+    },
+    education: {
+        name: "Programming"
+    },
+    art: {
+        name: "Programming"
+    },
+
+    // Format
+    "text/html": {
+        name: "HTML"
+    },
+    "text/csv": {
+        name: "CSV"
+    },
+    "image/jpeg": {
+        name: "JPEG Image"
+    },
+    "image/html": {
+        name: "Web Image"
+    },
+    "image/png": {
+        name: "PNG Image"
+    },
+    "application/pdf": {
+        name: "PDF"
+    },
+    "application/msword": {
+        name: "MSWord"
+    },
+
 }
 
 class Filters {
@@ -115,12 +197,12 @@ class Filters {
     }
 
     static Ascensor(filterId) {
-        return _Filters[filterId].ascensor 
+        return _Filters[filterId].ascensor
     }
 
     static Values(filterId) {
-        return _Filters[filterId].values 
-    }    
+        return _Filters[filterId].values
+    }
 
     static get List() {
         return Object.keys(_Filters);
@@ -128,10 +210,6 @@ class Filters {
 }
 
 class FiltersValues {
-    
-    static Filter(valueId) {
-        return _FiltersValues[valueId].filter
-    }
 
     static Name(valueId) {
         return _FiltersValues[valueId].name

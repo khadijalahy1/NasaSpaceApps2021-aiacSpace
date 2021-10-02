@@ -1,22 +1,7 @@
 
-function layout() {
-  cy.layout({
-    name: 'concentric',
-    fit: true,
-    minNodeSpacing: 200,
-    randomize: true,
-    padding: 100,
-    animate: true,
-    animationDuration: 350,
-    animationEasing: 'ease-in-out'
-  }).run()
-}
-
-
 var cy = cytoscape({
   container: document.getElementById('cy'),
 
-  wheelSensitivity: 0.1,
   boxSelectionEnabled: false,
   autounselectify: true,
 
@@ -25,20 +10,22 @@ var cy = cytoscape({
     .css({
       'background-opacity': '0',
     })
-    .selector('edge')
+    .selector('edge[color]')
     .css({
       'curve-style': 'unbundled-bezier',
       'width': 6,
       'target-arrow-shape': 'triangle',
-      'line-color': '#FFF',
-      'target-arrow-color': '#FFF'
+      'line-color': 'data(color)',
+      'target-arrow-color': 'data(color)'
     })
 }); // cy init
+
 
 cy.domNode();
 
 
-let initNode = new Node("all", null);
+let initNode = new Node(null, "all", null, false);
+
 /*
 addNode("all", , "Datasets", null, (node) => {
 

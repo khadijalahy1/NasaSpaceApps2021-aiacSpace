@@ -131,7 +131,6 @@ var cxtmenu = function cxtmenu(params) {
   ['mousedown', 'mousemove', 'mouseup', 'contextmenu'].forEach(function (evt) {
     wrapper.addEventListener(evt, function (e) {
       e.preventDefault();
-
       return false;
     });
   });
@@ -144,7 +143,8 @@ var cxtmenu = function cxtmenu(params) {
     zIndex: 1,
     marginLeft: -options.activePadding + 'px',
     marginTop: -options.activePadding + 'px',
-    userSelect: 'none'
+    userSelect: 'none',
+    transition: 'all 350ms'
   });
 
   canvas.width = containerSize;
@@ -627,7 +627,11 @@ var cxtmenu = function cxtmenu(params) {
       }
       queueDrawCommands(rx, ry, r, theta, rs);
     }).on('tapdrag', dragHandler).on('cxttapend tapend', function () {
-      parent.style.display = 'none';
+     
+       parent.style.display = 'none';     
+     //parent.style.opacity = '0';
+     //parent.style.transform = 'scale(0)';
+
       if (activeCommandI !== undefined) {
         var select = commands[activeCommandI].select;
 

@@ -9,5 +9,19 @@ class ColorUtils {
         } else {
             return "rgb(" + r + ", " + g + ", " + b + ")";
         }
-    }
+    }      
+}
+
+class Cytoscape {
+    static DoLayout(fit=true) {
+        cy.layout({
+          name: 'concentric',
+          fit: fit,
+          minNodeSpacing: 50,
+          padding: 100,
+          animate: true,
+          animationDuration: 350,
+          animationEasing: 'ease-in-out'
+        }).run()
+      }
 }
