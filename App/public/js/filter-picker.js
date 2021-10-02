@@ -23,7 +23,8 @@ class FilterPicker {
         }          
 
         commands.push({
-          fillColor: ColorUtils.HexToRGBA( Filters.Color( filterId ), 0.9),
+          fillColor: 'rgba(9, 24, 38, 0.75)',
+          activeFillColor: ColorUtils.HexToRGBA( Filters.Color( filterId ), 0.9),
           content: `<img width='38' height='38' src='${Filters.Icon( filterId )}'>`,
           select: () => { onFilterSelected(filterId) },
           enabled: !alreadyUsed

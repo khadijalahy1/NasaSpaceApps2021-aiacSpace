@@ -54,10 +54,14 @@ class Node {
     this.dom.addEventListener('dblclick', (e) => { this.onDoubleClick() });
 
     this.graphNode = cy.add({ group: 'nodes', data: { id: this.id, dom: this.dom } });
+    
+    cy.on('move', 'node[id="'+this.id+'"]', (e)=> {
+      console.log("sss");
+    });
 
     if (this.parent) {
       cy.add({ group: 'edges', data: { source: this.parent.id, target: this.id, color: Filters.Color(this.filterId) } });
-    }
+    }    
 
     this.picker = new FilterPicker(this, (e) => { this.onFilterSelected(e) });
   }
@@ -76,10 +80,11 @@ class Node {
     return this._filtersPath;
   }
 
-  remove() {
+  remove() {    
     this.picker.destroy();
     this.graphNode.remove();
     this.dom.remove();
+    this.clearChildNodes();
   }
 
   onClick() {
@@ -92,13 +97,14 @@ class Node {
 
   onFilterSelected(filterId) {
     this.forkOn(filterId);
-    setTimeout(Cytoscape.DoLayout, 50);
+    Cytoscape.DoLayout(this.graphNode);
   }
 
   clearChildNodes() {
     if (this.childNodes)
       this.childNodes.forEach(node => node.remove())
 
+    this.automove?.destroy();
     this.childNodes = [];
   }
 
@@ -128,8 +134,17 @@ class Node {
       values = values[p.value];
     }
 
+    let collection = cy.collection().union(this.graphNode);
+
     values.forEach((valueId) => {
-      this.childNodes.push(new Node(filterId, valueId, this));
+      let node = new Node(filterId, valueId, this);
+      this.childNodes.push(node);
+     // collection = collection.union(node.graphNode);
+    });
+
+    this.automove = cy.automove({
+      nodesMatching: collection,
+      meanOnSelfPosition: function( node ){ return false; }
     });
   }
 

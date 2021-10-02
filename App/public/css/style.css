@@ -83,3 +83,7 @@ body {
 .pick-filter-menu > .filter.disabled {
     background-color: gray;
 }
+
+.cxtmenu-disabled {
+    filter: opacity(0.2);
+}

@@ -237,6 +237,7 @@ var cxtmenu = function cxtmenu(params) {
       if (command.fillColor) {
         c2d.fillStyle = command.fillColor;
       }
+      
       c2d.beginPath();
       c2d.moveTo(radius + options.activePadding, radius + options.activePadding);
       c2d.arc(radius + options.activePadding, radius + options.activePadding, radius, 2 * Math.PI - theta1, 2 * Math.PI - theta2, true);
@@ -291,7 +292,14 @@ var cxtmenu = function cxtmenu(params) {
     theta1 += dtheta * activeCommandI;
     theta2 += dtheta * activeCommandI;
 
-    c2d.fillStyle = options.activeFillColor;
+    var fillColor = commands[activeCommandI]?.activeFillColor;
+
+    if(!fillColor)
+    {
+      fillColor = options.activeFillColor;
+    }
+
+    c2d.fillStyle = fillColor;
     c2d.strokeStyle = 'black';
     c2d.lineWidth = 1;
     c2d.beginPath();

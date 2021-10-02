@@ -1,4 +1,5 @@
-const _Filters = {
+const _Filters = 
+{
     theme: {
         name: 'Theme',
         description: 'Space, Earth,...',
@@ -65,18 +66,32 @@ const _Filters = {
         ]
     },
 
-    language: {
-        name: 'Language',
-        description: 'English, Spanish, Python,...',
+    languageType: {
+        name: 'Language Type',
+        description: 'Normal or programming',
         icon: '/assets/icons/filters/ic_lang.svg',
         color: '#c75b83',
+        successors: ['language'],
         values: [
-
+            "normal", "programming"
         ]
+    },
+
+    language: {
+        name: 'Language Type',
+        description: 'English, Spanish, Python,...',
+        icon: '/assets/icons/filters/ic_lang.svg',
+        color: '#7a8139',
+        predecessor: 'languageType',
+        values: {
+            normal: ["english", "french"],
+            programming: ["python", "javaScript", "java"]
+        }
     },
 }
 
-const _FiltersValues = {
+const _FiltersValues = 
+{
     // All (This is not a real filter)
     all: {
         name: "Datasets",
@@ -267,6 +282,30 @@ const _FiltersValues = {
         name: "MSWord"
     },
 
+    // Language Type
+    normal: { 
+        name: "Normal"
+    },
+    // programming: {  Already defined
+    //     name: "Normal"
+    // }
+
+    english: {
+        name: "English"
+    },
+
+    french: {
+        name: "French"
+    },
+    python: {
+        name: "Python"
+    },
+    javaScript: {
+        name: "JavaScript"
+    },
+    java: {
+        name: "Java"
+    }
 }
 
 class Filters {

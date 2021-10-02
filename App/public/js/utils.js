@@ -43,19 +43,27 @@ class ColorUtils {
 }
 
 class Cytoscape {
-    static DoLayout(fit=false) {
-        cy.layout({
-            name: 'cose',
+    static DoLayout(node) {
+        setTimeout(() => {
+            cy.layout({
+                name: 'cose',
+                //fit: true,
+                componentSpacing: 100,                        
+                padding: 100,
+                randomize: false,
+                animate: 'end',
+                animationEasing: 'ease-out',
+                animationDuration: 250,
+                stop: () => {
+                    setTimeout( () => {
+                        cy.zoom(1)
+                        cy.center(node);
+                    }, 100);
+                }
+            })
+            .run();
 
-            // componentSpacing: 40,
-                        
-            padding: 100,
+        }, 50);   
 
-            randomize: false,
-
-            animate: 'end',
-            animationEasing: 'ease-out',
-            animationDuration: 250
-        }).run()
       }
 }
