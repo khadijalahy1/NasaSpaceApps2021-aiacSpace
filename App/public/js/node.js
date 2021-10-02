@@ -4,7 +4,7 @@
 
 class Node {
   constructor(filterId, filterValueId, parent = null, showIconAndText = false) {
-    
+
     this.value = filterValueId;
 
     // The id must be unique, so we will use the nodes hierarchy to generate the final id.
@@ -31,12 +31,11 @@ class Node {
     let content = document.createElement("div");
     content.className = 'node-dom';
     let filterColor = Filters.Color(filterId);
-    if(filterColor)
-    {
+    if (filterColor) {
       content.style.borderColor = Filters.Color(filterId);
       content.style.color = ColorUtils.LightenDarkenColor(Filters.Color(filterId), -20);
-    }    
-    this.dom.appendChild(content);    
+    }
+    this.dom.appendChild(content);
 
     if (this.icon) {
       let iconElm = document.createElement("img");
@@ -54,14 +53,14 @@ class Node {
     this.dom.addEventListener('dblclick', (e) => { this.onDoubleClick() });
 
     this.graphNode = cy.add({ group: 'nodes', data: { id: this.id, dom: this.dom } });
-    
-    cy.on('move', 'node[id="'+this.id+'"]', (e)=> {
+
+    cy.on('move', 'node[id="' + this.id + '"]', (e) => {
       console.log("sss");
     });
 
     if (this.parent) {
       cy.add({ group: 'edges', data: { source: this.parent.id, target: this.id, color: Filters.Color(this.filterId) } });
-    }    
+    }
 
     this.picker = new FilterPicker(this, (e) => { this.onFilterSelected(e) });
   }
@@ -80,7 +79,11 @@ class Node {
     return this._filtersPath;
   }
 
-  remove() {    
+  get childGraphNodes() {
+    return cy.collection(this.childNodes.map(e => e.graphNode));
+  }
+
+  remove() {
     this.picker.destroy();
     this.graphNode.remove();
     this.dom.remove();
@@ -116,7 +119,7 @@ class Node {
 
     this.forkedFilter = filterId;
     this.childNodes = [];
-    
+
     this.dom.style.border = `5px solid ${Filters.Color(filterId)}`;
     this.dom.style.background = ColorUtils.HexToRGBA(Filters.Color(filterId), 0.5);
     this.dom.children[0].style.borderStyle = "solid";
@@ -124,27 +127,25 @@ class Node {
     let values = Filters.Values(filterId);
 
     let predecessor = Filters.Predecessor(filterId);
-    if(predecessor)
-    {
+    if (predecessor) {
       let p = this;
-      while(p.filterId != predecessor)
-      {
+      while (p.filterId != predecessor) {
         p = p.parent;
       }
       values = values[p.value];
     }
 
-    let collection = cy.collection().union(this.graphNode);
+    let collection = cy.collection();
 
     values.forEach((valueId) => {
       let node = new Node(filterId, valueId, this);
       this.childNodes.push(node);
-     // collection = collection.union(node.graphNode);
     });
 
     this.automove = cy.automove({
-      nodesMatching: collection,
-      meanOnSelfPosition: function( node ){ return false; }
+      nodesMatching: this.childGraphNodes,
+      reposition: 'drag',
+      dragWith: this.graphNode,
     });
   }
 

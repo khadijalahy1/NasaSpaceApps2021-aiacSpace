@@ -54,12 +54,12 @@ class Cytoscape {
                 animate: 'end',
                 animationEasing: 'ease-out',
                 animationDuration: 250,
-                stop: () => {
+                /*stop: () => {
                     setTimeout( () => {
                         cy.zoom(1)
                         cy.center(node);
                     }, 100);
-                }
+                }*/
             })
             .run();
 
