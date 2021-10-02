@@ -141,16 +141,16 @@ const _FiltersValues = {
         name: "Programming"
     },
     research: {
-        name: "Programming"
+        name: "Research"
     },
     business: {
-        name: "Programming"
+        name: "Business"
     },
     education: {
-        name: "Programming"
+        name: "Education"
     },
     art: {
-        name: "Programming"
+        name: "Art"
     },
 
     // Format
