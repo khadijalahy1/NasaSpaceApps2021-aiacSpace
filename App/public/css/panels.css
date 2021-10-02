@@ -1,0 +1,43 @@
+.panel {
+    position: absolute;
+    background-color: rgb(19 54 86 / 80%);
+    padding: 10px;
+    border-radius: 20px;
+    color: #FFF;
+    font-family: sans-serif;
+}
+
+#glossary {
+    right: 10px;
+    top: 10px;
+    display: flex;
+    flex-direction: column;
+    user-select: none;
+}
+
+#glossary > div {
+    display: flex;
+    align-items: center;
+    padding: 2px;     
+    margin: 2px;
+    border-radius: 5px;
+}
+
+#glossary > div > span {
+    margin: 0 10px;
+}
+
+#glossary > div > img {
+    width: 24px;
+    height: 24px;
+    padding: 3px;  
+}
+
+#info {
+    left: 10px;
+    top: 10px;
+}
+
+#info td:first-child {
+    font-weight: bold;
+}

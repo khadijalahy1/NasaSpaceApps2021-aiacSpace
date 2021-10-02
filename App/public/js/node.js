@@ -3,7 +3,10 @@
 
 
 class Node {
-  constructor(filterId, filterValueId, parent = null, showIconAndText = false) {
+
+  static SelectedNode = null;
+
+  constructor(filterId, filterValueId, parent = null, showIconAndText = false, select = false) {
 
     this.value = filterValueId;
 
@@ -32,8 +35,9 @@ class Node {
     content.className = 'node-dom';
     let filterColor = Filters.Color(filterId);
     if (filterColor) {
-      content.style.borderColor = Filters.Color(filterId);
-      content.style.color = ColorUtils.LightenDarkenColor(Filters.Color(filterId), -20);
+      content.style.borderColor = ColorUtils.LightenDarkenColor(filterColor, 40);
+      content.style.background = ColorUtils.LightenDarkenColor(filterColor, -40);
+      content.style.color = "#fff";
     }
     this.dom.appendChild(content);
 
@@ -54,15 +58,14 @@ class Node {
 
     this.graphNode = cy.add({ group: 'nodes', data: { id: this.id, dom: this.dom } });
 
-    cy.on('move', 'node[id="' + this.id + '"]', (e) => {
-      console.log("sss");
-    });
-
     if (this.parent) {
-      cy.add({ group: 'edges', data: { source: this.parent.id, target: this.id, color: Filters.Color(this.filterId) } });
-    }
+      this.graphEgde = cy.add({ group: 'edges', data: { source: this.parent.id, target: this.id, color: Filters.Color(this.filterId) } });
+    }    
 
     this.picker = new FilterPicker(this, (e) => { this.onFilterSelected(e) });
+
+    if(select)
+      this.onClick();
   }
 
   get boundingClientRect() {
@@ -90,8 +93,15 @@ class Node {
     this.clearChildNodes();
   }
 
-  onClick() {
-    console.log("clicked: " + this.id);
+  onClick() {    
+    this.dom.children[0].style.boxShadow = "0 0 10px 5px #FFF";
+    if(Node.SelectedNode)
+      Node.SelectedNode.dom.children[0].style.boxShadow = "none";
+    Node.SelectedNode = this;    
+    Statistics.setPath(this.id);
+    // Fetch count
+    Statistics.setCount(GetRandomInt(1,30));
+    this.highlighPath();
   }
 
   onDoubleClick() {
@@ -110,6 +120,20 @@ class Node {
     this.automove?.destroy();
     this.childNodes = [];
   }
+
+  highlighPath(tail) {    
+    if(tail)
+    {            
+      this.childNodes.forEach((node) => {      
+          node.dom.style.opacity = 0.3;        
+          node.graphEgde.style({ opacity: 0.3 });
+      });
+      tail.dom.style.opacity = 1;      
+      tail.graphEgde.style({ opacity: 1 });
+    }
+
+    this.parent?.highlighPath(this);
+  }  
 
   forkOn(filterId) {
     if (this.forkedFilter === filterId)
@@ -134,8 +158,6 @@ class Node {
       }
       values = values[p.value];
     }
-
-    let collection = cy.collection();
 
     values.forEach((valueId) => {
       let node = new Node(filterId, valueId, this);

@@ -3,7 +3,8 @@ var cy = cytoscape({
   container: document.getElementById('cy'),
 
   boxSelectionEnabled: true,
-  autounselectify: false,
+  autounselectify: true,
+  selectionType: 'single',
 
   style: cytoscape.stylesheet()
     .selector('node')
@@ -27,7 +28,6 @@ var cy = cytoscape({
 
 cy.domNode();
 
-let initNode = new Node(null, "all", null, true);
+let initNode = new Node(null, "all", null, true, true);
 
 cy.center()
-

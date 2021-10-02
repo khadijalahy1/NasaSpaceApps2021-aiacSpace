@@ -78,7 +78,7 @@ const _Filters =
     },
 
     language: {
-        name: 'Language Type',
+        name: 'Language',
         description: 'English, Spanish, Python,...',
         icon: '/assets/icons/filters/ic_lang.svg',
         color: '#7a8139',

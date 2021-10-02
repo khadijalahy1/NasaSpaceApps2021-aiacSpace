@@ -2,12 +2,26 @@
 <html>
 
 <head>
-    <title>WebApp</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <title>WebApp</title>    
+    <link rel="stylesheet" href="/css/graph.css">
+    <link rel="stylesheet" href="/css/panels.css">
 </head>
 
 <body>
     <div id="cy"></div>    
+    <div class="panel" id="glossary"></div>
+    <div class="panel" id="info">
+        <table>
+            <tr>
+                <td>Path:</td>
+                <td id="path">All datasets</td>
+            </tr>
+            <tr>
+                <td>Count:</td>
+                <td id="count">40</td>
+            </tr>
+        </table>
+    </div>
     <!-- Cytoscape and Extensions -->
     <script src="./js/cytoscape.min.js"></script>
     <script src="./js/cytoscape.dom.node.js"></script>
@@ -18,6 +32,8 @@
     <script src="./js/filter-picker.js"></script>
     <script src="./js/node.js"></script>
     <script src="./js/constants.js"></script>    
+    <script src="./js/glossary.js"></script>    
+    <script src="./js/statistics.js"></script>    
     <script src="./js/script.js"></script>
 </body>
 
