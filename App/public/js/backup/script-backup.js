@@ -1,4 +1,4 @@
-import cytoscape from "./cytoscape.esm.min.js";
+import cytoscape from "../cytoscape.esm.min.js";
 
 // photos from flickr with creative commons license
 

@@ -1,11 +1,17 @@
-import cytoscape from "./cytoscape.esm.min.js";
-import cytoscapeDomNode from "./cytoscape.dom.node.js";
 
+function layout() {
+  cy.layout({
+    name: 'concentric',
+    fit: true,
+    minNodeSpacing: 200,
+    randomize: true,
+    padding: 100,
+    animate: true,
+    animationDuration: 350,
+    animationEasing: 'ease-in-out'
+  }).run()
+}
 
-cytoscape.use(cytoscapeDomNode);
-
-// A node is either forked or not.
-// A forked node, is forked to into a set of values of a chosen category.
 
 var cy = cytoscape({
   container: document.getElementById('cy'),
@@ -29,54 +35,28 @@ var cy = cytoscape({
     })
 }); // cy init
 
-
 cy.domNode();
 
-let addNode = (id, icon, text, parentId, onClickCallback) => {
-  let node = document.createElement("div");
-  node.className = 'node';
 
-  let nodeDom = document.createElement("div");
-  nodeDom.className = 'node-dom';
-  node.appendChild(nodeDom);
+let initNode = new Node("all", null);
+/*
+addNode("all", , "Datasets", null, (node) => {
 
-  let iconElm = document.createElement("img");
-  iconElm.src = icon;
-  nodeDom.appendChild(iconElm);
-
-  let textElm = document.createElement("span");
-  textElm.textContent = text;
-  nodeDom.appendChild(textElm);
-
-  node.addEventListener('click', (e) => {
-    e.currentTarget.classList.add("forked");
-    if(onClickCallback)
-      onClickCallback();
-  });
-
-  cy.add({ group: 'nodes', data: { id: id, dom: node } });
-
-  if (parentId) {
-    cy.add({ group: 'edges', data: { source: parentId, target: id } });
+  if (node.isForked) {
+    node.isForked = false;
+    cy.$('#' + node.id).neighborhood(function (ele) {
+      cy.remove(ele);
+    });
   }
-}
+  else {
+    node.isForked = true;
+    addNode("space", "./assets/icons/ic_space.svg", "Space", "all");
+    addNode("earth", "./assets/icons/ic_earth.svg", "Earth", "all");
+    addNode("ocean", "./assets/icons/ic_ocean.svg", "Ocean", "all");
+  }
 
-addNode("all", "./assets/icons/ic_all.svg", "Datasets", null, () => {
-  addNode("space", "./assets/icons/ic_space.svg", "Space", "all");
-  addNode("earth", "./assets/icons/ic_earth.svg", "Earth", "all");
-  addNode("ocean", "./assets/icons/ic_ocean.svg", "Ocean", "all");
-
-  cy.layout({
-    name: 'concentric',
-    fit: false,
-    minNodeSpacing: 200,
-    randomize: true,
-    padding: 100,
-    animate: true,
-    animationDuration: 250
-  }).run()
-  
-})
+  layout();
+})*/
 
 cy.center()
 
