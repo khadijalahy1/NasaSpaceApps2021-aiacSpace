@@ -3,15 +3,22 @@
 
 
 class Node {
-  constructor(filterId, filterValueId, parent = null, showIconOnly = true) {
+  constructor(filterId, filterValueId, parent = null, showIconAndText = false) {
+    
+    this.value = filterValueId;
 
-    this.id = filterValueId;
+    // The id must be unique, so we will use the nodes hierarchy to generate the final id.
+    if (parent)
+      this.id = parent.id + " > " + filterValueId;
+    else
+      this.id = filterValueId;
+
     this.icon = FiltersValues.Icon(filterValueId);
-    if (!this.icon || !showIconOnly)
+    if (showIconAndText || !this.icon)
       this.text = FiltersValues.Name(filterValueId);
 
     // this.filter is the filter that gived this node.
-    this.filter = filterId;
+    this.filterId = filterId;
 
     // this.forkedFilter is the filter that this node is currently forking
     this.forkedFilter = null;
@@ -23,7 +30,13 @@ class Node {
 
     let content = document.createElement("div");
     content.className = 'node-dom';
-    this.dom.appendChild(content);
+    let filterColor = Filters.Color(filterId);
+    if(filterColor)
+    {
+      content.style.borderColor = Filters.Color(filterId);
+      content.style.color = ColorUtils.LightenDarkenColor(Filters.Color(filterId), -20);
+    }    
+    this.dom.appendChild(content);    
 
     if (this.icon) {
       let iconElm = document.createElement("img");
@@ -31,9 +44,11 @@ class Node {
       content.appendChild(iconElm);
     }
 
-    let textElm = document.createElement("span");
-    textElm.textContent = this.text;
-    content.appendChild(textElm);
+    if (this.text) {
+      let textElm = document.createElement("span");
+      textElm.textContent = this.text;
+      content.appendChild(textElm);
+    }
 
     this.dom.addEventListener('click', (e) => { this.onClick() });
     this.dom.addEventListener('dblclick', (e) => { this.onDoubleClick() });
@@ -41,7 +56,7 @@ class Node {
     this.graphNode = cy.add({ group: 'nodes', data: { id: this.id, dom: this.dom } });
 
     if (this.parent) {
-      cy.add({ group: 'edges', data: { source: this.parent.id, target: this.id, color: Filters.Color(this.filter) } });
+      cy.add({ group: 'edges', data: { source: this.parent.id, target: this.id, color: Filters.Color(this.filterId) } });
     }
 
     this.picker = new FilterPicker(this, (e) => { this.onFilterSelected(e) });
@@ -52,13 +67,13 @@ class Node {
   }
 
   get filtersPath() {
-    let path = [this.filter];
-    let p = this.parent;
-    while (p != null) {
-      path.push(p.filter);
-      p = p.parent;
+    if (this._filtersPath === undefined) {
+      if (this.parent)
+        this._filtersPath = this.parent.filtersPath.concat(this.filterId);
+      else
+        this._filtersPath = [];
     }
-    return path;
+    return this._filtersPath;
   }
 
   remove() {
@@ -77,7 +92,7 @@ class Node {
 
   onFilterSelected(filterId) {
     this.forkOn(filterId);
-    Cytoscape.DoLayout();
+    setTimeout(Cytoscape.DoLayout, 50);
   }
 
   clearChildNodes() {
@@ -95,10 +110,25 @@ class Node {
 
     this.forkedFilter = filterId;
     this.childNodes = [];
-
+    
     this.dom.style.border = `5px solid ${Filters.Color(filterId)}`;
+    this.dom.style.background = ColorUtils.HexToRGBA(Filters.Color(filterId), 0.5);
+    this.dom.children[0].style.borderStyle = "solid";
 
-    Filters.Values(filterId).forEach((valueId) => {
+    let values = Filters.Values(filterId);
+
+    let predecessor = Filters.Predecessor(filterId);
+    if(predecessor)
+    {
+      let p = this;
+      while(p.filterId != predecessor)
+      {
+        p = p.parent;
+      }
+      values = values[p.value];
+    }
+
+    values.forEach((valueId) => {
       this.childNodes.push(new Node(filterId, valueId, this));
     });
   }

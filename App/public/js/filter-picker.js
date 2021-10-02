@@ -2,17 +2,31 @@ class FilterPicker {
     constructor (node, onFilterSelected) {
   
       let commands = [];
+      let allFilters = Filters.List;
       let filtersPath = node.filtersPath;
   
-      Filters.List.forEach((filterId) => {
-  
+      allFilters.forEach((filterId) => {        
+
+        // Before adding a filter to the picker, we must take care of 2 special filters:
+        // 1- the already used ones
+        // 2- the ones that have an predecessor that the user didn't choose yet, e.g: Speciality is a successor of Audience.
+        // The first ones are going to be disabled for the moment.
+        // The seconds ones, should not be included, unless their predecossor is already used, in that case it have to be removed.
+        // The following lines (before commands.push) deals with this.
+        
+        let alreadyUsed = filtersPath.includes(filterId);        
+        let predecessor = Filters.Predecessor(filterId);
+
+        if((alreadyUsed && Filters.Successors(filterId)) || (predecessor && !filtersPath.includes(predecessor)))
+        {       
+          return;
+        }          
+
         commands.push({
           fillColor: ColorUtils.HexToRGBA( Filters.Color( filterId ), 0.9),
           content: `<img width='38' height='38' src='${Filters.Icon( filterId )}'>`,
-          contentStyle: {
-   
-          }, 
-          select: () => { onFilterSelected(filterId) }
+          select: () => { onFilterSelected(filterId) },
+          enabled: !alreadyUsed
         });
       });
   

@@ -24,7 +24,7 @@ var cy = cytoscape({
 cy.domNode();
 
 
-let initNode = new Node(null, "all", null, false);
+let initNode = new Node(null, "all", null, true);
 
 /*
 addNode("all", , "Datasets", null, (node) => {

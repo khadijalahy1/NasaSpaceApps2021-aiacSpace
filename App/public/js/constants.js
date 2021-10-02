@@ -5,7 +5,7 @@ const _Filters = {
         icon: '/assets/icons/filters/ic_theme.svg',
         color: '#ac963e',
         values: [
-            "earth", "ocean", "space"
+            "geospatial", "jason_3", "ocean", "earth", "space", "vegetation", "aqua", "ecology", "operations", "mars", "defense"
         ]
     },
 
@@ -15,7 +15,7 @@ const _Filters = {
         icon: '/assets/icons/filters/ic_source.svg',
         color: '#b85abe',
         values: [
-
+            "ob_daac", "nasa", "ornl_daac", "lp_daac", "copernicus"
         ]
     },
 
@@ -25,7 +25,7 @@ const _Filters = {
         icon: '/assets/icons/filters/ic_param.svg',
         color: '#5ea758',
         values: [
-            "temperature", "density", "salinity", "wavelengths", "SSHA", "GPS orbit", "pressure", "radiation", "precipitation", "concentration", "water vapor", "pH", "conductivity"
+            "temperature", "density", "salinity", "wavelengths", "ssha", "gps_orbit", "pressure", "radiation", "precipitation", "concentration", "water_vapor", "ph", "conductivity"
         ]
     },
 
@@ -34,6 +34,7 @@ const _Filters = {
         description: 'Science, Education, Programming,...',
         icon: '/assets/icons/filters/ic_audience.svg',
         color: '#7278cb',
+        successors: ['speciality'],
         values: [
             "programming", "research", "business", "education", "art"
         ]
@@ -44,10 +45,10 @@ const _Filters = {
         description: 'Physics, Biologist,...',
         icon: '/assets/icons/filters/ic_speciality.svg',
         color: '#cb6242',
-        ascensor: 'audience',
+        predecessor: 'audience',
         values: {
-            programming: ["development", "software", "AI", "ML"],
-            research: ["biology", "chemistry", "biology", "meteorology", "geology", "astronomy", "mathematics"],
+            programming: ["development", "software", "ai", "ml"],
+            research: ["biology", "chemistry", "meteorology", "geology", "astronomy", "mathematics"],
             business: ["agriculture", "maritim", "defense", "software"],
             education: ["chemistry", "biology", "physics", "geology", "management", "mathematics", "astronomy"],
             art: []
@@ -60,7 +61,7 @@ const _Filters = {
         icon: '/assets/icons/filters/ic_format.svg',
         color: '#45b2c4',
         values: [
-            "text/html", "text/csv", "image/jpeg", "image/html", "image/png", "application/pdf", "application/msword"
+            "text_html", "text_csv", "image_jpeg", "image_html", "image_png", "application_pdf", "application_msword"
         ]
     },
 
@@ -76,23 +77,65 @@ const _Filters = {
 }
 
 const _FiltersValues = {
-    // None
+    // All (This is not a real filter)
     all: {
         name: "Datasets",
         icon: "/assets/icons/filters/all/ic_all.svg"
+
     },
     // Theme
     earth: {
         name: "Earth",
-        icon: "/assets/icons/filters/theme/ic_earth.svg"
+        // icon: "/assets/icons/filters/theme/ic_earth.svg"
     },
-    ocean: {
-        name: "Ocean",
-        icon: "/assets/icons/filters/theme/ic_ocean.svg"
+    aqua: {
+        name: "Aqua",
+        // icon: "/assets/icons/filters/theme/ic_ocean.svg"
     },
     space: {
         name: "Space",
-        icon: "/assets/icons/filters/theme/ic_space.svg"
+        // icon: "/assets/icons/filters/theme/ic_space.svg"
+    },
+    geospatial: {
+        name: "Geospatial"
+    },
+    jason_3: {
+        name: "JASON-3"
+    },
+    ocean: {
+        name: "Ocean"
+    },
+    vegetation: {
+        name: "Vegetation"
+    },
+    ecology: {
+        name: "Ecology"
+    },
+    operations: {
+        name: "Operations"
+    },
+    mars: {
+        name: "Mars"
+    },
+    defense: {
+        name: "Defense"
+    },
+
+    // Source
+    ob_daac: {
+        name: "OB.DAAC"
+    }, //attention here!!!
+    nasa: {
+        name: "NASA"
+    },
+    ornl_daac: {
+        name: "ORNL_DAAC"
+    },
+    lp_daac: {
+        name: "LP DAAC"
+    },
+    copernicus: {
+        name: "copernicus"
     },
 
     // Parameter
@@ -108,10 +151,10 @@ const _FiltersValues = {
     wavelengths: {
         name: "Wave lengths"
     },
-    SSHA: {
+    ssha: {
         name: "SSHA"
     },
-    "GPS orbit": {
+    gps_orbit: {
         name: "GPS orbit"
     },
     pressure: {
@@ -126,10 +169,10 @@ const _FiltersValues = {
     concentration: {
         name: "Concentration"
     },
-    "water vapor": {
+    water_vapor: {
         name: "Water vapor"
     },
-    pH: {
+    ph: {
         name: "pH"
     },
     conductivity: {
@@ -153,26 +196,74 @@ const _FiltersValues = {
         name: "Art"
     },
 
+    // Speciality
+    development: {
+        name: "Development"
+    },
+    software: {
+        name: "Software"
+    },
+    ai: {
+        name: "AI"
+    },
+    ml: {
+        name: "ML"
+    },
+    biology: {
+        name: "Biology"
+    },
+    chemistry: {
+        name: "Chemistry"
+    },
+    meteorology: {
+        name: "Meteorology"
+    },
+    geology: {
+        name: "Geology"
+    },
+    astronomy: {
+        name: "Astronomy"
+    },
+    mathematics: {
+        name: "Mathematics"
+    },
+    agriculture: {
+        name: "Agriculture"
+    },
+    maritim: {
+        name: "Maritim"
+    },
+    defense: {
+        name: "Defense"
+    },
+    physics: {
+        name: "Physics"
+    },
+    management: {
+        name: "Management"
+    },
+
+
     // Format
-    "text/html": {
+    text_html: {
         name: "HTML"
     },
-    "text/csv": {
+    text_csv: {
         name: "CSV"
     },
-    "image/jpeg": {
+    image_jpeg: {
         name: "JPEG Image"
     },
-    "image/html": {
+    image_html: {
         name: "Web Image"
     },
-    "image/png": {
+    image_png: {
         name: "PNG Image"
     },
-    "application/pdf": {
+    application_pdf: {
         name: "PDF"
     },
-    "application/msword": {
+    application_msword: {
         name: "MSWord"
     },
 
@@ -181,27 +272,31 @@ const _FiltersValues = {
 class Filters {
 
     static Name(filterId) {
-        return _Filters[filterId].name
+        return _Filters[filterId]?.name
     }
 
     static Description(filterId) {
-        return _Filters[filterId].description
+        return _Filters[filterId]?.description
     }
 
     static Icon(filterId) {
-        return _Filters[filterId].icon
+        return _Filters[filterId]?.icon
     }
 
     static Color(filterId) {
-        return _Filters[filterId].color
+        return _Filters[filterId]?.color
     }
 
-    static Ascensor(filterId) {
-        return _Filters[filterId].ascensor
+    static Predecessor(filterId) {
+        return _Filters[filterId]?.predecessor
+    }
+
+    static Successors(filterId) {
+        return _Filters[filterId]?.successors
     }
 
     static Values(filterId) {
-        return _Filters[filterId].values
+        return _Filters[filterId]?.values;
     }
 
     static get List() {
@@ -212,10 +307,10 @@ class Filters {
 class FiltersValues {
 
     static Name(valueId) {
-        return _FiltersValues[valueId].name
+        return _FiltersValues[valueId]?.name
     }
 
     static Icon(valueId) {
-        return _FiltersValues[valueId].icon
+        return _FiltersValues[valueId]?.icon
     }
 }

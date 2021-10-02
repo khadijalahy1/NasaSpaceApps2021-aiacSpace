@@ -32,22 +32,22 @@ body {
     justify-content: center;    
     background-color: #FFF;    
     border-radius: 100%;
-    border: 3px solid #3f3fe9;
-    color: #2f2faf;
+    border: 5px dashed #3f3fe9;
+    color: #3f3fe9;    
     margin: 5px;
     width: 100px;
     height: 100px;
+    filter: brightness(85%);
     transition: width 250ms;
 }
 
 .node-dom > img {
     width: 48px;
     height: 48px;
-    margin-bottom: 5px;
 }
 
 .node-dom > span {
-    margin: 10px;
+    margin: 5px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;    
     font-size: 14px;
     font-weight: bold;  
