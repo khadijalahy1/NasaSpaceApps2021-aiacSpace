@@ -47,7 +47,7 @@ class Cytoscape {
         setTimeout(() => {
             cy.layout({
                 name: 'cose',
-                //fit: true,
+                fit: false,
                 componentSpacing: 100,                        
                 padding: 100,
                 randomize: false,
