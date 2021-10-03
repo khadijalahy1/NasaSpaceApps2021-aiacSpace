@@ -64,5 +64,5 @@ DATA4∀1 is a webApp which is displaying all the filters that the user will nee
 
 
 **SLIDES (IN ITALIAN)**
-- [Google Slides](https://docs.google.com/presentation/d/1eF7N_hRMlZYtYcyZvL7i-_9NULhR5TM8qQzK-EJ2-ZE/edit?usp=sharing)
+- [Google Slides](https://docs.google.com/presentation/d/1xGzQmBT6G2UO9qItEUL0zC4gaOrn_qi31d9xkonL3ms/edit#slide=id.gf5887f1cc4_3_2070)
 - [Video Rendering](./assets/video/rendering.mp4)
