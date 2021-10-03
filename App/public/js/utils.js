@@ -10,4 +10,67 @@ class ColorUtils {
             return "rgb(" + r + ", " + g + ", " + b + ")";
         }
     }
+
+    static LightenDarkenColor(col, amt) {
+
+        var usePound = false;
+
+        if (col[0] == "#") {
+            col = col.slice(1);
+            usePound = true;
+        }
+
+        var num = parseInt(col, 16);
+
+        var r = (num >> 16) + amt;
+
+        if (r > 255) r = 255;
+        else if (r < 0) r = 0;
+
+        var b = ((num >> 8) & 0x00FF) + amt;
+
+        if (b > 255) b = 255;
+        else if (b < 0) b = 0;
+
+        var g = (num & 0x0000FF) + amt;
+
+        if (g > 255) g = 255;
+        else if (g < 0) g = 0;
+
+        return (usePound ? "#" : "") + (g | (b << 8) | (r << 16)).toString(16);
+
+    }
+}
+
+class Cytoscape {
+    static DoLayout(node) {
+        setTimeout(() => {
+            cy.layout({
+                name: 'cose',
+                fit: false,
+                nodeRepulsion: function (node) { return 99999; },
+                componentSpacing: 100,
+                padding: 100,
+                randomize: false,
+                animate: 'end',
+                animationEasing: 'ease-in-out',
+                animationDuration: 350,
+                stop: () => {
+                    setTimeout(() => {
+                        cy.zoom(.8)
+                        cy.center(node);
+                    }, 100);
+                }
+            })
+                .run();
+
+        }, 50);
+
+    }
+}
+
+function GetRandomInt(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min) + min); //The maximum is exclusive and the minimum is inclusive
 }

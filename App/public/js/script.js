@@ -1,62 +1,33 @@
 
-function layout() {
-  cy.layout({
-    name: 'concentric',
-    fit: true,
-    minNodeSpacing: 200,
-    randomize: true,
-    padding: 100,
-    animate: true,
-    animationDuration: 350,
-    animationEasing: 'ease-in-out'
-  }).run()
-}
-
-
 var cy = cytoscape({
   container: document.getElementById('cy'),
 
-  wheelSensitivity: 0.1,
-  boxSelectionEnabled: false,
+  boxSelectionEnabled: true,
   autounselectify: true,
+  selectionType: 'single',
 
   style: cytoscape.stylesheet()
     .selector('node')
     .css({
       'background-opacity': '0',
     })
-    .selector('edge')
+    .selector('node:selected')
+    .css({
+      'background': 'red',
+    })
+    .selector('edge[color]')
     .css({
       'curve-style': 'unbundled-bezier',
       'width': 6,
       'target-arrow-shape': 'triangle',
-      'line-color': '#FFF',
-      'target-arrow-color': '#FFF'
+      'line-color': 'data(color)',
+      'target-arrow-color': 'data(color)'
     })
-}); // cy init
+}); 
+
 
 cy.domNode();
 
-
-let initNode = new Node("all", null);
-/*
-addNode("all", , "Datasets", null, (node) => {
-
-  if (node.isForked) {
-    node.isForked = false;
-    cy.$('#' + node.id).neighborhood(function (ele) {
-      cy.remove(ele);
-    });
-  }
-  else {
-    node.isForked = true;
-    addNode("space", "./assets/icons/ic_space.svg", "Space", "all");
-    addNode("earth", "./assets/icons/ic_earth.svg", "Earth", "all");
-    addNode("ocean", "./assets/icons/ic_ocean.svg", "Ocean", "all");
-  }
-
-  layout();
-})*/
+let initNode = new Node(null, "all", null, true, true);
 
 cy.center()
-
