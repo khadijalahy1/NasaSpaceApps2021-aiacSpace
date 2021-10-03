@@ -41,3 +41,26 @@
 #info td:first-child {
     font-weight: bold;
 }
+
+#poweredby {
+    display: flex;
+    align-items: center;    
+    bottom: 10px;
+    left: 5px;
+    padding: 3px;
+    background: rgb(60 133 190 / 53%);
+    border-radius: 100px;
+}
+
+#poweredby > img {
+    width: 24px;
+    margin-left: 5px;
+}
+
+#poweredby > a {
+    color: #ffac31;
+    text-decoration: none;
+    font-weight: bold;
+    font-style: italic;
+    margin-right: 10px;    
+}
