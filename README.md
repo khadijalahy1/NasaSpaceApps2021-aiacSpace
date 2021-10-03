@@ -34,7 +34,7 @@ node index.js
 
 -------------------------------------------------------------------
 
-# Project Ninfea
+# Project infos
 We aim to guide the user through his journey of searching for data step by step until getting the exact data that'll meet his need.
 
 
