@@ -1,7 +1,7 @@
 # DATA4∀1
 This repo was used to support [our idea](https://2021.spaceappschallenge.org/challenges/statements/ontologies-and-interactive-network-visualizations/teams/aiacspace) for the [NASA Space Apps Challenge 2021](https://2021.spaceappschallenge.org/).
 
-![Logo](./assets/images/header-img.PNG)
+![Logo](./assets/images/header-img.png)
 
 ### Ontology
 To build this project the following ontology was designed
@@ -50,7 +50,7 @@ Analyzing NASA and other agencies data we've found that all the data that is ava
 DATA4∀1 is a webApp which is displaying all the filters that the user will need through a network  visualization.
 
 ![Target coasts](./assets/images/demo.PNG)
-![Target coasts1](./assets/images/browse-page.PNG)
+![Target coasts1](./assets/images/browse-page.jpeg)
 
 
 
