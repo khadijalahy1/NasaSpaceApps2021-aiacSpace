@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<style>
+	table {
+		font-family: arial, sans-serif;
+		border-collapse: collapse;
+		width: 50%;
+	}
+		
+	th {
+		border: 1px solid #dddddd;
+		text-align:left;
+		padding: 8px;
+	}
+		
+	tr:nth-child(even) {
+		background-color: #dddddd;
+	}
+	body {
+		background-image: url('./WhatsApp\ Image\ 2021-10-03\ at\ 3.08.05\ AM.jpeg');
+		background-repeat: no-repeat;
+		background-attachment: fixed;  
+		background-size: cover;
+	}
+
+</style>
+</head>
+
+<body>
+		<h2 style="text-align: center;">Data Summary</h2>
+
+		<table style="margin-left: auto; margin-right: auto;">
+			<tr>
+			<th>Audience</th>
+			<td>research</td>
+			</tr>
+			<tr>
+				<th>Speciality</th>
+				<td>biology</td>
+			</tr>
+			<tr>
+			<th>Parameter</th>
+			<td>temperature, density, salinity</td>
+			</tr>
+			<tr>
+				<th>Language</th>
+				<td>english</td>
+			</tr>
+			<tr>
+				<th>Language Type</th>
+				<td>normal</td>
+			</tr>
+			<tr>
+				<th>AccessLevel</th>
+				<td>public</td>
+			</tr>
+			<tr>
+				<th>Description</th>
+				<td>Measurements made in the Gulf of Maine in 2007 under the BIODIVERSITY program.</td>
+			</tr>
+			<tr>
+				<th>Distribution</th>
+				<td>
+					<a href="https://scholar.google.com/scholar?q=10.5067%2FSeaBASS%2FBIODIVERSITY%2FDATA001">databaseURL</a>
+				</td>
+			</tr>
+		</table>
+	</div>
+	
+
+	<!-- <script src=
+"https://www.gstatic.com/firebasejs/3.7.4/firebase.js">
+	</script>
+	
+	<script>
+		var firebaseConfig = {
+			apiKey: "Use Your Api Key Here",
+			authDomain: "Use Your authDomain Here",
+			databaseURL: "Use Your databaseURL Here",
+			projectId: "Use Your projectId Here",
+			storageBucket: "Use Your storageBucket Here",
+			messagingSenderId: "Use Your messagingSenderId Here",
+			appId: "Use Your appId Here"
+		};
+
+		firebase.initializeApp(firebaseConfig);
+
+		var messagesRef = firebase.database()
+			.ref('Collected Data');
+		
+		document.getElementById('contactForm')
+			.addEventListener('submit', submitForm);
+
+		function submitForm(e) {
+			e.preventDefault();
+
+			// Get values
+			var name = getInputVal('name');
+			var email = getInputVal('email');
+
+			saveMessage(name, email);
+			document.getElementById('contactForm').reset();
+		}
+
+		// Function to get get form values
+		function getInputVal(id) {
+			return document.getElementById(id).value;
+		}
+
+		// Save message to firebase
+		function saveMessage(name, email) {
+			var newMessageRef = messagesRef.push();
+			newMessageRef.set({
+				name: name,
+				email: email,
+			});
+		}
+	</script> -->
+
+</html>
