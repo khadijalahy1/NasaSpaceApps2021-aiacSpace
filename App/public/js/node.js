@@ -82,6 +82,17 @@ class Node {
     return this._filtersPath;
   }
 
+  get query() {
+    if (this._query === undefined) {
+      if (this.parent) {
+        this._query = this.parent.query + this.filterId + "=" + this.value + "&";
+      }
+      else
+        this._query = "?";
+    }
+    return this._query;
+  }
+
   get childGraphNodes() {
     return cy.collection(this.childNodes.map(e => e.graphNode));
   }
@@ -93,19 +104,20 @@ class Node {
     this.clearChildNodes();
   }
 
-  onClick() {    
-    this.dom.children[0].style.boxShadow = "0 0 10px 5px #FFF";
+  onClick() {        
     if(Node.SelectedNode)
       Node.SelectedNode.dom.children[0].style.boxShadow = "none";
-    Node.SelectedNode = this;    
-    Statistics.setPath(this.id);
-    // Fetch count
-    Statistics.setCount(GetRandomInt(1,30));
+    this.dom.children[0].style.boxShadow = "0 0 10px 5px #FFF";      
+    Node.SelectedNode = this;        
+
+    Summary.update(this);    
+
     this.highlighPath();
   }
 
   onDoubleClick() {
-    this.unFork();
+    window.open("/dataset" + this.query);
+    //this.unFork();
   }
 
   onFilterSelected(filterId) {

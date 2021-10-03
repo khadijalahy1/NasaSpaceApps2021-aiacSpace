@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<style>
+		h2 {
+			text-align: center
+		}
+
+		body {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			background-color: #f7f7f7;
+			font-family: sans-serif;
+		}
+
+		table,
+		th,
+		td {
+			border: 1px solid black;
+		}
+
+		table {
+			width: 90%;
+			border-collapse: collapse;
+
+		}
+
+		td {
+			text-align: center;
+		}
+
+		#container {
+			display: flex;
+			flex-direction: column;
+		}
+
+		.dataset {
+			display: flex;
+			flex-direction: column;
+			background-color: white;
+			border: 1px solid gray;
+			margin: 10px;
+			padding: 10px;
+		}
+
+		.dataset>.title {
+			font-size: large;
+			font-weight: 600;
+			color: #1c6387;
+			margin-bottom: 10px;
+		}
+
+		.dataset>.desc {
+			height: 50px;
+			overflow: hidden;
+		}
+	</style>
+</head>
+
+<body>
+	<h2 id="title">Datasets</h2>
+	<table>
+		<tr>
+			<th>Theme</th>
+			<th>Source</th>
+			<th>Parameter</th>
+			<th>Audience</th>
+			<th>Speciality</th>
+			<th>Format</th>
+			<th>LanguageType</th>
+			<th>Language</th>
+		</tr>
+		<tr>
+			<td id="theme"></td>
+			<td id="source"></td>
+			<td id="parameter"></td>
+			<td id="audience"></td>
+			<td id="speciality"></td>
+			<td id="format"></td>
+			<td id="languageType"></td>
+			<td id="language"></td>
+		</tr>
+	</table>
+	<div id="container"></div>
+	<script>
+		var parseQueryString = function () {
+
+			var str = window.location.search;
+			var objURL = {};
+
+			str.replace(
+				new RegExp("([^?=&]+)(=([^&]*))?", "g"),
+				function ($0, $1, $2, $3) {
+					objURL[$1] = $3;
+				}
+			);
+			return objURL;
+		};
+
+		const query = parseQueryString();
+		console.log(query);
+		let cont = document.getElementById("container");
+		fetch("/query" + window.location.search).then((rep) => rep.json()).then((json) => {
+
+			title.textContent = "Datasets (" + json.dataset.length + ")";
+
+			const any = (str) => { return str ? str : "-" };
+
+			document.getElementById("theme").textContent = any(query.theme);
+			document.getElementById("source").textContent = any(query.source);
+			document.getElementById("parameter").textContent = any(query.parameter);
+			document.getElementById("audience").textContent = any(query.audience);
+			document.getElementById("speciality").textContent = any(query.speciality);
+			document.getElementById("format").textContent = any(query.format);
+			document.getElementById("languageType").textContent = any(query.languageType);
+			document.getElementById("language").textContent = any(query.language);
+
+			json.dataset.forEach(dataset => {
+				let elm = document.createElement("div");
+				elm.className = "dataset";
+
+				let title = document.createElement("a");
+				title.className = "title";
+				title.href = dataset.landingPage;
+				title.textContent = dataset.title;
+
+				let desc = document.createElement("span");
+				desc.className = "desc";
+				desc.textContent = dataset.description;
+
+				elm.appendChild(title);
+				elm.appendChild(desc);
+
+				cont.appendChild(elm);
+			});
+		})
+	</script>
+
+</html>

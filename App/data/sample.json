@@ -1,0 +1,1904 @@
+{
+  "dataset": [
+    {
+      "audience": [
+        { "field": "research", "speciality": "biology" },
+        { "field": "research", "speciality": "chemistry" },
+        { "field": "research", "speciality": "biology" },
+        { "field": "research", "speciality": "optics" }
+      ],
+      "parameter": ["temperature", "density", "salinity"],
+      "language": [{ "type": "normal", "name": "english" }],
+      "accessLevel": "public",
+      "landingPage": "https://doi.org/10.5067/SeaBASS/BIODIVERSITY/DATA001",
+      "bureauCode": ["026:00"],
+
+      "issued": "2007-05-26",
+      "temporal": "2007-04-27T23:52:40Z/2020-12-07T00:00:00Z",
+      "@type": "dcat:Dataset",
+      "modified": "2021-05-20",
+      "keyword": [
+        "earth science",
+        "oceans",
+        "ocean chemistry",
+        "ocean optics",
+        "ocean temperature",
+        "salinity/density"
+      ],
+      "contactPoint": {
+        "@type": "vcard:Contact",
+        "fn": "undefined",
+        "hasEmail": "mailto:seabass@seabass.gsfc.nasa.gov"
+      },
+      "publisher": {
+        "@type": "org:Organization",
+        "name": "OB.DAAC"
+      },
+      "identifier": "C1633360159-OB_DAAC",
+      "description": "Measurements made in the Gulf of Maine in 2007 under the BIODIVERSITY program.",
+      "title": "BIODIVERSITY",
+      "programCode": ["026:001"],
+      "distribution": [
+        {
+          "mediaType": "text/html",
+          "downloadURL": "https://scholar.google.com/scholar?q=10.5067%2FSeaBASS%2FBIODIVERSITY%2FDATA001",
+          "description": "Search results for publications that cite this dataset by its DOI.",
+          "@type": "dcat:Distribution",
+          "title": "Google Scholar search results"
+        },
+        {
+          "@type": "dcat:Distribution",
+          "downloadURL": "https://seabass.gsfc.nasa.gov/experiment/BIODIVERSITY/",
+          "mediaType": "text/html",
+          "title": "This dataset's landing page"
+        }
+      ],
+      "spatial": "-180.0 -90.0 180.0 90.0",
+      "theme": ["geospatial"]
+    },
+    {
+      "audience": [{ "field": "research", "speciality": "meteorology" }],
+      "language": [{ "type": "normal", "name": "english" }],
+      "parameter": ["temperature", "grayscale", "wavelengths"],
+      "accessLevel": "public",
+      "landingPage": "https://doi.org/10.5067/YEBBOH25T6KW",
+      "bureauCode": ["026:00"],
+      "issued": "1964-08-28",
+      "temporal": "1964-08-28T00:00:00Z/1970-01-31T23:59:59.999Z",
+      "@type": "dcat:Dataset",
+      "modified": "2021-05-20",
+      "keyword": [
+        "earth science",
+        "spectral/engineering",
+        "infrared wavelengths"
+      ],
+      "contactPoint": {
+        "@type": "vcard:Contact",
+        "fn": "NSIDC Services",
+        "hasEmail": "mailto:nsidc@nsidc.org"
+      },
+      "publisher": {
+        "@type": "org:Organization",
+        "name": "NASA NSIDC DAAC"
+      },
+      "identifier": "C1703453177-NSIDC_ECS",
+      "description": "This data set consists of daily, global grayscale TIFF images derived from radiative temperatures measured in the 3.4 to 4.2 µm window. These data were detected by the High Resolution Infrared Radiometer (HRIR) on board the Nimbus 1, Nimbus 2, and Nimbus 3 satellites during 1964, 1966, and 1969-1970. The Nimbus HRIR sensor was used to map the earth's nighttime cloud cover and to measure cloud top temperatures or surface temperatures. Note: This data set is not georeferenced and contains some gaps in temporal coverage because of missing data.",
+      "title": "Nimbus High Resolution Infrared Radiometer Grayscale Swath Data L1, TIFF V001",
+      "programCode": ["026:001"],
+      "distribution": [
+        {
+          "mediaType": "text/html",
+          "downloadURL": "https://scholar.google.com/scholar?q=10.5067%2FYEBBOH25T6KW",
+          "description": "Search results for publications that cite this dataset by its DOI.",
+          "@type": "dcat:Distribution",
+          "title": "Google Scholar search results"
+        },
+        {
+          "mediaType": "text/html",
+          "downloadURL": "https://n5eil01u.ecs.nsidc.org/NIMBUS/NmHRIR1T.001",
+          "description": "Direct download via HTTPS protocol.",
+          "@type": "dcat:Distribution",
+          "title": "Download this dataset"
+        },
+        {
+          "mediaType": "text/html",
+          "downloadURL": "https://search.earthdata.nasa.gov/search/granules?p=C1703453177-NSIDC_ECS&q=NmHRIR1T&m=-58.10675108287023%21-1.6864013671875%211%211%210%210%2C2&tl=1568750791%214%21%21",
+          "description": "NASA's newest search and order tool for subsetting, reprojecting, and reformatting data.",
+          "@type": "dcat:Distribution",
+          "title": "Download this dataset through Earthdata Search"
+        },
+        {
+          "mediaType": "text/html",
+          "downloadURL": "https://doi.org/10.5067/YEBBOH25T6KW",
+          "description": "Provides access to data, documentation, tools, citation information, support, and other resources.",
+          "@type": "dcat:Distribution",
+          "title": "This dataset's landing page"
+        },
+        {
+          "mediaType": "text/html",
+          "downloadURL": "https://doi.org/10.5067/YEBBOH25T6KW",
+          "description": "Includes a user's guide, supplemental documents like ATBDs and academic papers, How Tos, FAQs, etc.",
+          "@type": "dcat:Distribution",
+          "title": "View documentation related to this dataset"
+        }
+      ],
+      "spatial": "-180.0 -90.0 180.0 90.0",
+      "theme": ["geospatial"]
+    },
+    {
+      "audience": [
+        { "field": "research", "speciality": "geology" },
+        { "field": "education", "speciality": "geology" }
+      ],
+      "language": [{ "type": "normal", "name": "english" }],
+
+      "parameter": ["SSHA", "GPS orbit"],
+
+      "accessLevel": "public",
+      "landingPage": "https://cmr.earthdata.nasa.gov:443/search/concepts/C1723370066-PODAAC.html",
+      "bureauCode": ["026:00"],
+      "citation": "Desai, Shailen. 2016-10-10. Jason-3 GPS based orbit and SSHA OGDR. Version A. JASON_3_L2_OST_OGDR_GPS. JPL. Archived by National Aeronautics and Space Administration, U.S. Government, JPL. Desai, Shailen, JPL, 2016-10-10, Jason-3 GPS based orbit and SSHA OGDR, .",
+      "issued": "2016-09-21",
+      "temporal": "2016-09-30T19:19:49Z/2021-09-20T00:00:00Z",
+      "@type": "dcat:Dataset",
+      "modified": "2017-04-28",
+      "keyword": [
+        "earth science",
+        "oceans",
+        "sea surface topography",
+        "ocean waves"
+      ],
+      "contactPoint": {
+        "@type": "vcard:Contact",
+        "fn": "undefined",
+        "hasEmail": "mailto:podaac@podaac.jpl.nasa.gov"
+      },
+      "publisher": {
+        "@type": "org:Organization",
+        "name": "NASA/JPL/PODAAC"
+      },
+      "identifier": "C1723370066-PODAAC",
+      "description": "This is a near real time dataset that provides a GPS based orbit and Sea Surface Height Anomalies (SSHA) from that orbit. It is similar to the Jason-3 Operation Geophysical Data Record (OGDR) that is distributed at NOAA (http://www.nodc.noaa.gov/sog/jason/), but includes the GPS orbit and SSHA as two additional variables. It has a 5 hour time lag due to the time needed to calculate the GPS orbit and SSHA.  The GPS orbits have been shown to be more accurate than the DORIS orbits on a near real time scale and therefore produces a more accurate SSHA.",
+      "release-place": "JPL",
+      "series-name": "Jason-3 GPS based orbit and SSHA OGDR",
+      "graphic-preview-description": "Thumbnail",
+      "creator": "Desai, Shailen",
+      "title": "Jason-3 GPS based orbit and SSHA OGDR",
+      "graphic-preview-file": "https://podaac.jpl.nasa.gov/Podaac/thumbnails/JASON_3_L2_OST_OGDR_GPS.jpg",
+      "programCode": ["026:001"],
+      "distribution": [
+        {
+          "mediaType": "image/jpeg",
+          "downloadURL": "https://podaac.jpl.nasa.gov/Podaac/thumbnails/JASON_3_L2_OST_OGDR_GPS.jpg",
+          "description": "Thumbnail",
+          "@type": "dcat:Distribution",
+          "title": "Get a related visualization"
+        },
+        {
+          "@type": "dcat:Distribution",
+          "downloadURL": "https://podaac-tools.jpl.nasa.gov/drive/files/allData/jason3/preview/L2/GPS-OGDR/docs/j3_user_handbook.pdf",
+          "mediaType": "application/pdf",
+          "title": "View this dataset's user's guide"
+        },
+        {
+          "@type": "dcat:Distribution",
+          "downloadURL": "https://podaac-tools.jpl.nasa.gov/drive/files/allData/jason3/preview/L2/GPS-OGDR/docs/README_JASON3_GPSOGDR.txt",
+          "mediaType": "text/html",
+          "title": "View this dataset's user's guide"
+        },
+        {
+          "mediaType": "text/html",
+          "downloadURL": "https://podaac-opendap.jpl.nasa.gov/opendap/allData/jason3/preview/L2/GPS-OGDR/",
+          "description": "The OPeNDAP base directory location for the collection.",
+          "@type": "dcat:Distribution",
+          "title": "Use OPeNDAP to access the dataset's data"
+        },
+        {
+          "mediaType": "text/html",
+          "downloadURL": "https://podaac-tools.jpl.nasa.gov/drive/files/allData/jason3/preview/L2/GPS-OGDR",
+          "description": "PO.DAAC Drive",
+          "@type": "dcat:Distribution",
+          "title": "Download this dataset"
+        },
+        {
+          "mediaType": "text/html",
+          "downloadURL": "https://podaac.jpl.nasa.gov/CitingPODAAC",
+          "description": "Data Use and Citation Policy ",
+          "@type": "dcat:Distribution",
+          "title": "View this dataset's data citation policy"
+        }
+      ],
+      "spatial": "-180.0 -66.0 180.0 66.0",
+      "theme": ["JASON-3", "geospatial"]
+    },
+    {
+      "audience": [
+        { "field": "research", "speciality": "geology" },
+        { "field": "research", "speciality": "physic" },
+        { "field": "business", "speciality": "agriculture" }
+      ],
+      "language": [{ "type": "normal", "name": "english" }],
+
+      "parameter": [
+        "temperature",
+        "pressure",
+        "radiation",
+        "precipitation",
+        "radiation"
+      ],
+   
+      "accessLevel": "public",
+      "bureauCode": ["026:00"],
+      "landingPage": "https://doi.org/10.5067/VCO8OCV72XO0",
+      "citation": "Li, B., H. Beaudoing, and M. Rodell,  NASA/GSFC/HSL. 2020-01-30. GLDAS_CLSM10_3H. Version 2.1. GLDAS Catchment Land Surface Model L4 3 hourly 1.0 x 1.0 degree V2.1. Greenbelt, Maryland, USA. Archived by National Aeronautics and Space Administration, U.S. Government, Goddard Earth Sciences Data and Information Services Center (GES DISC). https://doi.org/10.5067/VCO8OCV72XO0. https://disc.gsfc.nasa.gov/datacollection/GLDAS_CLSM10_3H_2.1.html. Digital Science Data.",
+      "issued": "2020-01-30",
+      "temporal": "2000-01-01T00:00:00Z/2021-09-20T00:00:00Z",
+      "@type": "dcat:Dataset",
+      "modified": "2020-01-30",
+      "references": [
+        "https://doi.org/10.1175/BAMS-85-3-381",
+        "https://doi.org/10.1038/s41598-019-47219-z"
+      ],
+      "keyword": [
+        "earth science",
+        "atmosphere",
+        "atmospheric pressure",
+        "atmospheric radiation",
+        "atmospheric temperature",
+        "atmospheric water vapor",
+        "atmospheric winds",
+        "precipitation",
+        "land surface",
+        "soils",
+        "surface thermal properties",
+        "terrestrial hydrosphere",
+        "snow/ice",
+        "surface water"
+      ],
+      "contactPoint": {
+        "@type": "vcard:Contact",
+        "fn": "HUALAN RUI",
+        "hasEmail": "mailto:Hualan.Rui@nasa.gov"
+      },
+      "data-presentation-form": "Digital Science Data",
+      "identifier": "C1690022359-GES_DISC",
+      "publisher": {
+        "@type": "org:Organization",
+        "name": "NASA/GSFC/SED/ESD/GCDC/GESDISC"
+      },
+      "description": "NASA Global Land Data Assimilation System Version 2 (GLDAS-2) has three components: GLDAS-2.0, GLDAS-2.1, and GLDAS-2.2.  GLDAS-2.0 is forced entirely with the Princeton meteorological forcing input data and provides a temporally consistent series from 1948 through 2014.  GLDAS-2.1 is forced with a combination of model and observation data from 2000 to present.  GLDAS-2.2 product suites use data assimilation (DA), whereas the GLDAS-2.0 and GLDAS-2.1 products are \"open-loop\" (i.e., no data assimilation).  The choice of forcing data, as well as DA observation source, variable, and scheme, vary for different GLDAS-2.2 products.\n\nGLDAS-2.1 data products are now available in two production streams: one stream is forced with combined forcing data including GPCP version 1.3 (the main production stream), and the other stream is processed without this forcing data (the early production stream). Since the GPCP Version 1.3 data have a 3-4 month latency, the GLDAS-2.1 data products are first created without it, and are designated as Early Products (EPs), with about 1.5 month latency. Once the GPCP Version 1.3 data become available, the GLDAS-2.1 data products are processed in the main production stream and are removed from the Early Products archive. \n\nThis data product is for GLDAS-2.1 Catchment 3-hourly 1.0 degree data from the main production stream. It was simulated with the Catchment-F2.5 Land Surface Model in Land Information System (LIS) Version 7.  The data product contains 34 land surface fields from January 2000 to present. The GLDAS-2.1 data are archived and distributed in NetCDF format. \n\nThe GLDAS-2.1 simulation started on January 1, 2000 using the conditions from the GLDAS-2.0 simulation. This simulation was forced with National Oceanic and Atmospheric Administration (NOAA)/Global Data Assimilation System (GDAS) atmospheric analysis fields (Derber et al., 1991), the disaggregated Global Precipitation Climatology Project (GPCP) V1.3 Daily Analysis precipitation fields (Adler et al., 2003; Huffman et al., 2001), and the Air Force Weather Agency's AGRicultural METeorological modeling system (AGRMET) radiation fields.  The simulation used with GDAS and GPCP only from 2000 to February 2001, followed by addition of AGRMET for March 1, 2001 onwards.\n\nIn October 2020, all 3-hourly and monthly GLDAS-2 data were post-processed with the MOD44W MODIS land mask.  Previously, some grid boxes over inland water were considered as over land and, thus, had non-missing values.  The post-processing corrected this issue and masked out all model output data over inland water; the post-processing did not affect the meteorological forcing variables. More information can be found in the GLDAS-2 README.  The MOD44W MODIS land mask is available on the GLDAS Project site.\n\nIf you had downloaded the GLDAS data prior to November 2020, please download the data again to receive the post-processed data.",
+      "release-place": "Greenbelt, Maryland, USA",
+      "series-name": "GLDAS_CLSM10_3H",
+      "creator": "Li, B., H. Beaudoing, and M. Rodell,  NASA/GSFC/HSL",
+      "graphic-preview-description": "GLDAS-2.1 Catchment 3-hourly 1.0 degree root zone soil moisture [kg m-2] for 03Z Jan. 01, 2000.",
+      "title": "GLDAS Catchment Land Surface Model L4 3 hourly 1.0 x 1.0 degree V2.1 (GLDAS_CLSM10_3H) at GES DISC",
+      "graphic-preview-file": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/Images/GLDAS_CLSM10_3H_2.1.png",
+      "programCode": ["026:001"],
+      "distribution": [
+        {
+          "mediaType": "text/html",
+          "downloadURL": "https://scholar.google.com/scholar?q=10.5067%2FVCO8OCV72XO0",
+          "description": "Search results for publications that cite this dataset by its DOI.",
+          "@type": "dcat:Distribution",
+          "title": "Google Scholar search results"
+        },
+        {
+          "mediaType": "image/png",
+          "downloadURL": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/Images/GLDAS_CLSM10_3H_2.1.png",
+          "description": "GLDAS-2.1 Catchment 3-hourly 1.0 degree root zone soil moisture [kg m-2] for 03Z Jan. 01, 2000.",
+          "@type": "dcat:Distribution",
+          "title": "Get a related visualization"
+        },
+        {
+          "mediaType": "text/html",
+          "downloadURL": "https://disc.gsfc.nasa.gov/datacollection/GLDAS_CLSM10_3H_2.1.html",
+          "description": "Access the dataset landing page from the GES DISC website.",
+          "@type": "dcat:Distribution",
+          "title": "This dataset's landing page"
+        },
+        {
+          "mediaType": "text/html",
+          "downloadURL": "https://hydro1.gesdisc.eosdis.nasa.gov/data/GLDAS/GLDAS_CLSM10_3H.2.1/",
+          "description": "Access the data via HTTPS.",
+          "@type": "dcat:Distribution",
+          "title": "Download this dataset through a directory map"
+        },
+        {
+          "mediaType": "text/html",
+          "downloadURL": "https://search.earthdata.nasa.gov/search?q=GLDAS_CLSM10_3H_2.1",
+          "description": "Use the Earthdata Search Client (EDSC) to find and retrieve data sets across multiple data centers.",
+          "@type": "dcat:Distribution",
+          "title": "Download this dataset through Earthdata Search"
+        },
+        {
+          "mediaType": "text/html",
+          "downloadURL": "https://hydro1.gesdisc.eosdis.nasa.gov/opendap/hyrax/GLDAS/GLDAS_CLSM10_3H.2.1/",
+          "description": "Access the data via the OPeNDAP protocol.",
+          "@type": "dcat:Distribution",
+          "title": "Use OPeNDAP to access the dataset's data"
+        },
+        {
+          "mediaType": "application/pdf",
+          "downloadURL": "https://hydro1.gesdisc.eosdis.nasa.gov/data/GLDAS/README_GLDAS2.pdf",
+          "description": "README Document",
+          "@type": "dcat:Distribution",
+          "title": "View this dataset's read me document"
+        },
+        {
+          "mediaType": "text/html",
+          "downloadURL": "https://ldas.gsfc.nasa.gov/gldas/",
+          "description": "GLDAS Project Web Site",
+          "@type": "dcat:Distribution",
+          "title": "The dataset's project home page"
+        },
+        {
+          "mediaType": "text/html",
+          "downloadURL": "https://disc.gsfc.nasa.gov/information/howto?tags=hydrology",
+          "description": "How to read and plot the data.",
+          "@type": "dcat:Distribution",
+          "title": "View this dataset's how-to documentation"
+        },
+        {
+          "mediaType": "text/html",
+          "downloadURL": "https://disc.gsfc.nasa.gov/information/documents?title=Hydrology+Documentation",
+          "description": "GES DISC Hydrology Documentation",
+          "@type": "dcat:Distribution",
+          "title": "View documentation related to this dataset"
+        },
+        {
+          "mediaType": "text/html",
+          "downloadURL": "https://hydro1.gesdisc.eosdis.nasa.gov/dods/GLDAS_CLSM10_3H.2.1",
+          "description": "The GrADS Data Server (GDS) is another form of OPeNDAP that provides subsetting and some analysis services across the Internet.",
+          "@type": "dcat:Distribution",
+          "title": "Use GRADS DATA SERVER (GDS) to access the dataset's data"
+        },
+        {
+          "mediaType": "text/html",
+          "downloadURL": "https://hydro1.gesdisc.eosdis.nasa.gov/thredds/catalog/GLDAS_aggregation/GLDAS_CLSM10_3H.2.1/catalog.html",
+          "description": "Time aggregated THREDDS Data Server (TDS)",
+          "@type": "dcat:Distribution",
+          "title": "Use THREDDS DATA to download the dataset's data"
+        }
+      ],
+      "spatial": "-180.0 -60.0 180.0 90.0",
+      "theme": ["GLDAS", "geospatial"]
+    },
+    {
+      "audience": [
+        { "field": "research", "speciality": "geology" },
+        { "field": "research", "speciality": "chemistry" },
+        { "field": "education", "speciality": "chemistry" }
+      ],
+      "language": [{ "type": "normal", "name": "english" }],
+
+      "parameter": ["salinity", "density"],
+
+      "accessLevel": "public",
+      "landingPage": "https://doi.org/10.5067/AQR50-3ZMDS",
+      "bureauCode": ["026:00"],
+      "issued": "2017-10-21",
+      "temporal": "2011-08-25T01:03:13Z/2015-06-07T12:45:21Z",
+      "@type": "dcat:Dataset",
+      "modified": "2021-05-20",
+      "keyword": ["earth science", "oceans", "salinity/density"],
+      "contactPoint": {
+        "@type": "vcard:Contact",
+        "fn": "User Services",
+        "hasEmail": "mailto:podaac@podaac.jpl.nasa.gov"
+      },
+      "publisher": {
+        "@type": "org:Organization",
+        "name": "NASA/JPL/PODAAC"
+      },
+      "identifier": "C1649543129-PODAAC",
+      "description": "Aquarius Level 3 sea surface salinity (SSS) standard mapped image data contains gridded 1 degree spatial resolution SSS averaged over daily, 7 day, monthly, and seasonal time scales. This particular data set is the Monthly, Descending sea surface\nsalinity smoothed product for version 5.0 of the Aquarius data set, which is the official end of mission public data release from the AQUARIUS/SAC-D mission. Only retrieved values for Descending passes have been used to create this product. The Aquarius instrument is onboard the AQUARIUS/SAC-D satellite, a collaborative effort between NASA and the Argentinian Space Agency Comision Nacional de Actividades Espaciales (CONAE). The instrument consists of three radiometers in push broom alignment at incidence angles of 29, 38, and 46 degrees incidence angles relative to the shadow side of the orbit.  Footprints for the beams are: 76 km (along-track) x 94 km (cross-track), 84 km x 120 km and 96km x 156 km, yielding a total cross-track swath of 370 km. The radiometers measure brightness temperature at 1.413 GHz in their respective horizontal and vertical polarizations (TH and TV). A scatterometer operating at 1.26 GHz measures ocean backscatter in each footprint that is used for surface roughness corrections in the estimation of salinity. The scatterometer has an approximate 390km swath.",
+      "title": "Aquarius Official Release Level 3 Sea Surface Salinity Smoothed Standard Mapped Image Descending Monthly Data V5.0",
+      "programCode": ["026:001"],
+      "distribution": [
+        {
+          "mediaType": "text/html",
+          "downloadURL": "https://scholar.google.com/scholar?q=10.5067%2FAQR50-3ZMDS",
+          "description": "Search results for publications that cite this dataset by its DOI.",
+          "@type": "dcat:Distribution",
+          "title": "Google Scholar search results"
+        },
+        {
+          "mediaType": "text/html",
+          "downloadURL": "https://podaac.jpl.nasa.gov/aquarius",
+          "description": "Mission and Instrument Overview",
+          "@type": "dcat:Distribution",
+          "title": "View documentation related to this dataset"
+        },
+        {
+          "mediaType": "text/html",
+          "downloadURL": "https://podaac-tools.jpl.nasa.gov/drive/files/allData/aquarius/sw/idl/",
+          "description": "Interactive Data Language read software",
+          "@type": "dcat:Distribution",
+          "title": "Downloadable software applications"
+        },
+        {
+          "mediaType": "text/html",
+          "downloadURL": "https://oceancolor.gsfc.nasa.gov/sdpscgi/public/aquarius_report.cgi",
+          "description": "Information on observatory maneuvers, anomalies and other events",
+          "@type": "dcat:Distribution",
+          "title": "View this dataset's documented anomalies"
+        },
+        {
+          "mediaType": "application/pdf",
+          "downloadURL": "https://podaac-tools.jpl.nasa.gov/drive/files/allData/aquarius/docs/v5/AQ-010-UG-0008_AquariusUserGuide_DatasetV5.0.pdf",
+          "description": "Aquarius Data User's Guide",
+          "@type": "dcat:Distribution",
+          "title": "View this dataset's user's guide"
+        },
+        {
+          "mediaType": "text/html",
+          "downloadURL": "https://aquarius.nasa.gov/",
+          "description": "NASA Aquarius/SAC-D mission website",
+          "@type": "dcat:Distribution",
+          "title": "View documentation related to this dataset"
+        },
+        {
+          "mediaType": "text/html",
+          "downloadURL": "https://podaac-tools.jpl.nasa.gov/drive/files/allData/aquarius/docs/v5/",
+          "description": "ATBD, Validation Analysis, Product Specifications, etc",
+          "@type": "dcat:Distribution",
+          "title": "View documentation related to this dataset"
+        },
+        {
+          "mediaType": "text/html",
+          "downloadURL": "https://podaac-tools.jpl.nasa.gov/drive/files/allData/aquarius/sw/matlab/",
+          "description": "MATLAB read software",
+          "@type": "dcat:Distribution",
+          "title": "Downloadable software applications"
+        },
+        {
+          "mediaType": "image/jpeg",
+          "downloadURL": "https://podaac.jpl.nasa.gov/Podaac/thumbnails/AQUARIUS_L3_SSS_SM_SMID_MONTHLY_V5.jpg",
+          "description": "Thumbnail",
+          "@type": "dcat:Distribution",
+          "title": "Get a related visualization"
+        },
+        {
+          "mediaType": "text/html",
+          "downloadURL": "https://podaac-tools.jpl.nasa.gov/drive/files/allData/aquarius/L3/mapped/V5/monthly/SCISMD",
+          "description": "PO.DAAC Drive",
+          "@type": "dcat:Distribution",
+          "title": "Download this dataset"
+        },
+        {
+          "mediaType": "text/html",
+          "downloadURL": "https://podaac-opendap.jpl.nasa.gov/opendap/allData/aquarius/L3/mapped/V5/monthly/SCISMD/",
+          "description": "The OPeNDAP base directory location for the collection.",
+          "@type": "dcat:Distribution",
+          "title": "Use OPeNDAP to access the dataset's data"
+        },
+        {
+          "mediaType": "text/html",
+          "downloadURL": "https://podaac.jpl.nasa.gov/CitingPODAAC",
+          "description": "Data Use and Citation Policy ",
+          "@type": "dcat:Distribution",
+          "title": "View this dataset's data citation policy"
+        }
+      ],
+      "spatial": "-180.0 -90.0 180.0 90.0",
+      "theme": ["AQUARIUS SAC-D", "geospatial"]
+    },
+    {
+      "audience": [
+        { "field": "research", "speciality": "meteorlogy" },
+        { "field": "business", "speciality": "agriculture" }
+      ],
+      "language": [{ "type": "normal", "name": "english" }],
+      "parameter": ["precipitation"],
+
+      "accessLevel": "public",
+      "landingPage": "https://doi.org/10.3334/ORNLDAAC/278",
+      "bureauCode": ["026:00"],
+      "issued": "1999-01-30",
+      "temporal": "1994-05-13T00:00:00Z/1994-09-23T23:59:59Z",
+      "@type": "dcat:Dataset",
+      "modified": "2021-05-20",
+      "keyword": [
+        "earth science",
+        "atmosphere",
+        "precipitation",
+        "biosphere",
+        "ecosystems"
+      ],
+      "contactPoint": {
+        "@type": "vcard:Contact",
+        "fn": "undefined",
+        "hasEmail": "mailto:uso@daac.ornl.gov"
+      },
+      "publisher": {
+        "@type": "org:Organization",
+        "name": "ORNL_DAAC"
+      },
+      "identifier": "C179003588-ORNL_DAAC",
+      "description": "The BOREAS HYD-09 team collected data on precipitation and streamflow over portions of the NSA and SSA.  This data set contains Cartesian maps of rain accumulation for 1-hour and daily periods during the summer of 1994 over the SSA only (not the full view of the radar)",
+      "title": "BOREAS HYD-09 Hourly and Daily Radar Rainfall Maps for the Southern Study Area",
+      "programCode": ["026:001"],
+      "distribution": [
+        {
+          "mediaType": "text/html",
+          "downloadURL": "https://scholar.google.com/scholar?q=10.3334%2FORNLDAAC%2F278",
+          "description": "Search results for publications that cite this dataset by its DOI.",
+          "@type": "dcat:Distribution",
+          "title": "Google Scholar search results"
+        },
+        {
+          "mediaType": "text/html",
+          "downloadURL": "https://daac.ornl.gov/daacdata/boreas/HYD/h09rradi/",
+          "description": "This link allows direct data access via Earthdata login",
+          "@type": "dcat:Distribution",
+          "title": "Download this dataset"
+        },
+        {
+          "mediaType": "text/html",
+          "downloadURL": "https://daac.ornl.gov/BOREAS/guides/HYD09_Rain_Radar.html",
+          "description": "ORNL DAAC Data Set Documentation",
+          "@type": "dcat:Distribution",
+          "title": "View documentation related to this dataset"
+        },
+        {
+          "mediaType": "text/html",
+          "downloadURL": "https://doi.org/10.3334/ORNLDAAC/278",
+          "description": "Data set Landing Page DOI URL",
+          "@type": "dcat:Distribution",
+          "title": "This dataset's landing page"
+        },
+        {
+          "mediaType": "text/html",
+          "downloadURL": "https://daac.ornl.gov/daacdata/boreas/HYD/h09rradi/comp/h09rradi.def",
+          "description": "Data Set Documentation",
+          "@type": "dcat:Distribution",
+          "title": "View documentation related to this dataset"
+        },
+        {
+          "mediaType": "text/html",
+          "downloadURL": "https://daac.ornl.gov/daacdata/boreas/HYD/h09rradi/comp/hyd09_rain_radar.dat",
+          "description": "Data Set Documentation",
+          "@type": "dcat:Distribution",
+          "title": "View documentation related to this dataset"
+        },
+        {
+          "mediaType": "application/msword",
+          "downloadURL": "https://daac.ornl.gov/daacdata/boreas/HYD/h09rradi/comp/HYD09_Rain_Radar.doc",
+          "description": "Data Set Documentation",
+          "@type": "dcat:Distribution",
+          "title": "View documentation related to this dataset"
+        },
+        {
+          "mediaType": "application/pdf",
+          "downloadURL": "https://daac.ornl.gov/daacdata/boreas/HYD/h09rradi/comp/HYD09_Rain_Radar.pdf",
+          "description": "Data Set Documentation",
+          "@type": "dcat:Distribution",
+          "title": "View documentation related to this dataset"
+        },
+        {
+          "mediaType": "text/html",
+          "downloadURL": "https://daac.ornl.gov/daacdata/boreas/HYD/h09rradi/comp/HYD09_Rain_Radar.txt",
+          "description": "Data Set Documentation",
+          "@type": "dcat:Distribution",
+          "title": "View documentation related to this dataset"
+        },
+        {
+          "mediaType": "text/html",
+          "downloadURL": "https://daac.ornl.gov/daacdata/boreas/HYD/h09rradi/comp/readme_radar",
+          "description": "Data Set Documentation",
+          "@type": "dcat:Distribution",
+          "title": "View documentation related to this dataset"
+        },
+        {
+          "mediaType": "image/png",
+          "downloadURL": "https://daac.ornl.gov/graphics/browse/project/square/boreas_logo_square.png",
+          "description": "Browse Image",
+          "@type": "dcat:Distribution",
+          "title": "Get a related visualization"
+        }
+      ],
+      "spatial": "-106.29 53.51 -104.31 54.27",
+      "theme": ["BOREAS", "geospatial"]
+    },
+    {
+      "audience": [
+        { "field": "research", "speciality": "physics" },
+        { "field": "research", "speciality": "biology" },
+        { "field": "education", "speciality": "physics" },
+        { "field": "education", "speciality": "biology" }
+      ],
+      "language": [{ "type": "normal", "name": "english" }],
+      "parameter": ["salinity", "density", "temperature"],
+
+      "accessLevel": "public",
+      "landingPage": "https://doi.org/10.5067/SeaBASS/BEST/DATA001",
+      "bureauCode": ["026:00"],
+      "issued": "2008-07-04",
+      "temporal": "2008-07-04T02:08:00Z/2020-01-30T00:00:00Z",
+      "@type": "dcat:Dataset",
+      "modified": "2021-05-20",
+      "keyword": [
+        "earth science",
+        "oceans",
+        "ocean chemistry",
+        "ocean optics",
+        "ocean temperature",
+        "salinity/density",
+        "ngda",
+        "national geospatial data asset"
+      ],
+      "contactPoint": {
+        "@type": "vcard:Contact",
+        "fn": "undefined",
+        "hasEmail": "mailto:seabass@seabass.gsfc.nasa.gov"
+      },
+      "publisher": {
+        "@type": "org:Organization",
+        "name": "OB.DAAC"
+      },
+      "identifier": "C1633360145-OB_DAAC",
+      "description": "The HLY0803 cruise of the USCG cutter Healy was an NSF funded cruise for the Bering Ecosystem Study (BEST) project that was focused on the impact of sea ice on the marine ecology of the region. In particular it focused on pathways of nutrients and organic matter that lead to the abundant upper trophic levels and valuable fisheries on the Bering Sea continental shelf. The cruise covered most of the eastern Bering Sea shelf from the Aleutian Islands to St. Lawrence Island with 177 unique stations that included CTD casts, bio-optics casts, MOCNESS tows, CALVet tows, bongo tows, multicore drops and sediment trap deployments.",
+      "title": "BEST",
+      "programCode": ["026:001"],
+      "distribution": [
+        {
+          "mediaType": "text/html",
+          "downloadURL": "https://scholar.google.com/scholar?q=10.5067%2FSeaBASS%2FBEST%2FDATA001",
+          "description": "Search results for publications that cite this dataset by its DOI.",
+          "@type": "dcat:Distribution",
+          "title": "Google Scholar search results"
+        },
+        {
+          "@type": "dcat:Distribution",
+          "downloadURL": "https://seabass.gsfc.nasa.gov/experiment/BEST/",
+          "mediaType": "text/html",
+          "title": "This dataset's landing page"
+        }
+      ],
+      "spatial": "-180.0 -90.0 180.0 90.0",
+      "theme": ["geospatial", "ocean"]
+    },
+    {
+      "audience": [
+        { "field": "research", "speciality": "physics" },
+        { "field": "research", "speciality": "geology" }
+      ],
+      "language": [{ "type": "normal", "name": "english" }],
+      "accessLevel": "public",
+      "landingPage": "https://doi.org/10.5067/TERRA/MODIS/L3B/ZLEE/2018",
+      "bureauCode": ["026:00"],
+      "issued": "2017-12-21",
+      "temporal": "2000-02-24T00:00:00Z/2020-12-07T00:00:00Z",
+      "@type": "dcat:Dataset",
+      "modified": "2021-05-20",
+      "keyword": [
+        "earth science",
+        "oceans",
+        "ocean optics",
+        "ngda",
+        "national geospatial data asset"
+      ],
+      "contactPoint": {
+        "@type": "vcard:Contact",
+        "fn": "undefined",
+        "hasEmail": "mailto:sdps@oceancolor.gsfc.nasa.gov"
+      },
+      "publisher": {
+        "@type": "org:Organization",
+        "name": "NASA/GSFC/SED/ESD/GCDC/OB.DAAC"
+      },
+      "identifier": "C1519118813-OB_DAAC",
+      "description": "MODIS (or Moderate Resolution Imaging Spectroradiometer) is a key instrument aboard the\nTerra (EOS AM) and Aqua (EOS PM) satellites. Terra's orbit around the Earth is timed so\nthat it passes from north to south across the equator in the morning, while Aqua passes\nsouth to north over the equator in the afternoon. Terra MODIS and Aqua MODIS are viewing\nthe entire Earth's surface every 1 to 2 days, acquiring data in 36 spectral bands, or\ngroups of wavelengths (see MODIS Technical Specifications). These data will improve our\nunderstanding of global dynamics and processes occurring on the land, in the oceans, and\nin the lower atmosphere. MODIS is playing a vital role in the development of validated,\nglobal, interactive Earth system models able to predict global change accurately enough\nto assist policy makers in making sound decisions concerning the protection of our\nenvironment.",
+      "title": "Terra Moderate Resolution Imaging Spectroradiometer (MODIS) Euphotic Depth (ZLEE) Global Binned Data, reprocessing v2018",
+      "programCode": ["026:001"],
+      "distribution": [
+        {
+          "mediaType": "text/html",
+          "downloadURL": "https://scholar.google.com/scholar?q=10.5067%2FTERRA%2FMODIS%2FL3B%2FZLEE%2F2018",
+          "description": "Search results for publications that cite this dataset by its DOI.",
+          "@type": "dcat:Distribution",
+          "title": "Google Scholar search results"
+        },
+        {
+          "mediaType": "text/html",
+          "downloadURL": "https://oceandata.sci.gsfc.nasa.gov/MODIS-Terra/L3BIN/",
+          "description": "NASA Ocean Color Web - Data Distribution Site",
+          "@type": "dcat:Distribution",
+          "title": "Download this dataset"
+        },
+        {
+          "mediaType": "text/html",
+          "downloadURL": "https://oceancolor.gsfc.nasa.gov/data/terra",
+          "description": "NASA Ocean Color Web - Instrument Description Page",
+          "@type": "dcat:Distribution",
+          "title": "View documentation related to this dataset"
+        },
+        {
+          "mediaType": "text/html",
+          "downloadURL": "https://oceancolor.gsfc.nasa.gov/atbd/products/eval#KDLEE",
+          "description": "NASA Ocean Color Web - Algorithm Descriptions",
+          "@type": "dcat:Distribution",
+          "title": "View this dataset's algorithm theoretical basis document"
+        },
+        {
+          "mediaType": "text/html",
+          "downloadURL": "https://oceancolor.gsfc.nasa.gov/reprocessing",
+          "description": "NASA Ocean Color Web - Data Processing History",
+          "@type": "dcat:Distribution",
+          "title": "View this dataset's processing history"
+        },
+        {
+          "mediaType": "text/html",
+          "downloadURL": "https://oceancolor.gsfc.nasa.gov/data/10.5067/TERRA/MODIS/L3B/ZLEE/2018",
+          "description": "OB.DAAC MODIS Terra L3B Euphotic Depth (ZLEE) Landing Page",
+          "@type": "dcat:Distribution",
+          "title": "This dataset's landing page"
+        },
+        {
+          "mediaType": "text/html",
+          "downloadURL": "https://oceancolor.gsfc.nasa.gov/forum/oceancolor/forum_show.pl",
+          "description": "Ocean Color Forum",
+          "@type": "dcat:Distribution",
+          "title": "View documentation related to this dataset"
+        }
+      ],
+      "spatial": "-180.0 -90.0 180.0 90.0",
+      "theme": ["geospatial", "ocean"]
+    },
+    {
+      "audience": [
+        { "field": "research", "speciality": "physics" },
+        { "field": "research", "speciality": "geology" }
+      ],
+      "language": [{ "type": "normal", "name": "english" }],
+
+      "accessLevel": "public",
+      "landingPage": "https://doi.org/Not Provided",
+      "bureauCode": ["026:00"],
+      "issued": "2018-01-11",
+      "temporal": "2000-02-24T00:00:00Z/2020-12-07T00:00:00Z",
+      "@type": "dcat:Dataset",
+      "modified": "2021-05-20",
+      "keyword": [
+        "earth science",
+        "oceans",
+        "ocean optics",
+        "ngda",
+        "national geospatial data asset"
+      ],
+      "contactPoint": {
+        "@type": "vcard:Contact",
+        "fn": "undefined",
+        "hasEmail": "mailto:sdps@oceancolor.gsfc.nasa.gov"
+      },
+      "publisher": {
+        "@type": "org:Organization",
+        "name": "NASA/GSFC/SED/ESD/GCDC/OB.DAAC"
+      },
+      "identifier": "C1458149037-OB_DAAC",
+      "description": "The Ocean Biology DAAC produces near real-time (quicklook) products using the best-available combination of\nancillary data from meteorological and ozone data. As such, the inputs and the calibration used are less than\noptimal. Quicklook products provide a snapshot of the data during a short time period within a single orbit.",
+      "title": "Terra Moderate Resolution Imaging Spectroradiometer (MODIS) Global Binned Diffuse Attenuation Coefficient for Downwelling Irradiance (KD) - NRT",
+      "programCode": ["026:001"],
+      "distribution": [
+        {
+          "mediaType": "text/html",
+          "downloadURL": "https://scholar.google.com/scholar?q=Not+Provided",
+          "description": "Search results for publications that cite this dataset by its DOI.",
+          "@type": "dcat:Distribution",
+          "title": "Google Scholar search results"
+        },
+        {
+          "mediaType": "text/html",
+          "downloadURL": "https://oceandata.sci.gsfc.nasa.gov/MODIS-Terra/L3BIN/",
+          "description": "NASA Ocean Color Web - Data Distribution Site",
+          "@type": "dcat:Distribution",
+          "title": "Download this dataset"
+        },
+        {
+          "mediaType": "text/html",
+          "downloadURL": "https://oceancolor.gsfc.nasa.gov/data/terra",
+          "description": "NASA Ocean Color Web - Instrument Description Page",
+          "@type": "dcat:Distribution",
+          "title": "View documentation related to this dataset"
+        },
+        {
+          "mediaType": "text/html",
+          "downloadURL": "https://oceancolor.gsfc.nasa.gov/atbd/kd_490",
+          "description": "NASA Ocean Color Web - Algorithm Descriptions",
+          "@type": "dcat:Distribution",
+          "title": "View this dataset's algorithm theoretical basis document"
+        },
+        {
+          "mediaType": "text/html",
+          "downloadURL": "https://oceancolor.gsfc.nasa.gov/reprocessing",
+          "description": "NASA Ocean Color Web - Data Processing History",
+          "@type": "dcat:Distribution",
+          "title": "View this dataset's processing history"
+        },
+        {
+          "mediaType": "text/html",
+          "downloadURL": "https://oceancolor.gsfc.nasa.gov/data/10.5067/Terra/MODIS/L3B/KD/2018",
+          "description": "OB.DAAC MODIS Terra L3B Diffuse Attenuation Coefficient for Downwelling Irradiance (KD) Landing Page",
+          "@type": "dcat:Distribution",
+          "title": "This dataset's landing page"
+        },
+        {
+          "mediaType": "text/html",
+          "downloadURL": "https://oceancolor.gsfc.nasa.gov/forum/oceancolor/forum_show.pl",
+          "description": "Ocean Color Forum",
+          "@type": "dcat:Distribution",
+          "title": "View documentation related to this dataset"
+        }
+      ],
+      "spatial": "-180.0 -90.0 180.0 90.0",
+      "theme": ["geospatial"]
+    },
+    {
+      "audience": [
+        { "field": "research", "speciality": "geology" },
+        { "field": "education", "speciality": "geology" }
+      ],
+      "language": [{ "type": "normal", "name": "english" }],
+      "parameter": ["pressure", "temperature"],
+      "landingPage": "https://doi.org/10.5067/GRIP/NAV/DATA102",
+      "bureauCode": ["026:00"],
+      "citation": "Sorenson, Carl .2011. GRIP GLOBAL HAWK NAVIGATION AND HOUSEKEEPING DATA [indicate subset used]. Dataset available online from the NASA Global Hydrometeorology Resource Center DAAC, Huntsville, Alabama, U.S.A. DOI: http://dx.doi.org/10.5067/GRIP/NAV/DATA102",
+      "issued": "2011-03-15",
+      "temporal": "2010-08-15T14:25:28Z/2010-09-24T17:06:10Z",
+      "@type": "dcat:Dataset",
+      "modified": "2021-08-23",
+      "keyword": [
+        "earth science",
+        "spectral/engineering",
+        "platform characteristics",
+        "atmosphere",
+        "atmospheric water vapor",
+        "atmospheric winds",
+        "atmospheric pressure",
+        "atmospheric temperature"
+      ],
+      "contactPoint": {
+        "@type": "vcard:Contact",
+        "fn": "undefined",
+        "hasEmail": "mailto:support-ghrc@earthdata.nasa.gov"
+      },
+      "publisher": {
+        "@type": "org:Organization",
+        "name": "NASA/MSFC/GHRC"
+      },
+      "identifier": "C1979859823-GHRC_DAAC",
+      "description": "The GRIP Global Hawk Navigation and Housekeeping data was collected from August 15, 2010 to September 24, 2010 during the Genesis and Rapid Intensification Processes (GRIP) field campaign. The major goal was to better understand how tropical storms form and develop into major hurricanes. The Global Hawk is an unmanned Airborne System configured with in situ and remote sensing instruments, including the Lightning Imaging Package (LIP), High Altitude Wind and Rain Profiler (HIWRAP), and High Altitude MMIC Sounding Radiometer (HAMSR). Data was collected for 7 dates and is in the IWGADTS IWG1 format. The dataset also includes XML files containing metadata documenting the parameters and their format collected during each day's flight.",
+      "title": "GRIP GLOBAL HAWK NAVIGATION AND HOUSEKEEPING DATA V1",
+      "programCode": ["026:001"],
+      "distribution": [
+        {
+          "mediaType": "text/html",
+          "downloadURL": "https://scholar.google.com/scholar?q=10.5067%2FGRIP%2FNAV%2FDATA102",
+          "description": "Search results for publications that cite this dataset by its DOI.",
+          "@type": "dcat:Distribution",
+          "title": "Google Scholar search results"
+        },
+        {
+          "mediaType": "text/html",
+          "downloadURL": "https://ghrc.nsstc.nasa.gov/pub/fieldCampaigns/grip/NAV_GH/data/",
+          "description": "Files may be downloaded directly to your workstation from this link",
+          "@type": "dcat:Distribution",
+          "title": "Download this dataset"
+        },
+        {
+          "mediaType": "text/html",
+          "downloadURL": "http://ghrc.nsstc.nasa.gov/uso/ds_docs/grip/gripnavgh/gripnavgh_dataset.html",
+          "description": "The guide document contains detailed information about the dataset",
+          "@type": "dcat:Distribution",
+          "title": "View documentation related to this dataset"
+        },
+        {
+          "mediaType": "text/html",
+          "downloadURL": "https://ghrc.nsstc.nasa.gov/home/field-campaigns/GRIP",
+          "description": "The home page for the project or program which sponsored the dataset",
+          "@type": "dcat:Distribution",
+          "title": "The dataset's project home page"
+        },
+        {
+          "mediaType": "text/html",
+          "downloadURL": "https://ghrc.nsstc.nasa.gov/home/about-ghrc/citing-ghrc-daac-data",
+          "description": "Instructions for citing GHRC data",
+          "@type": "dcat:Distribution",
+          "title": "View documentation related to this dataset"
+        }
+      ],
+      "spatial": "-124.4 12.0902 -71.4565 37.068",
+      "theme": ["GRIP (HURRICANE)", "geospatial"]
+    },
+    {
+      "audience": [
+        { "field": "research", "speciality": "chemistry" },
+        { "field": "business", "speciality": "agriculture" },
+        { "field": "research", "speciality": "geology" }
+      ],
+      "language": [{ "type": "normal", "name": "english" }],
+      "parameter": ["concentration"],
+
+      "accessLevel": "public",
+      "landingPage": "https://doi.org/10.3334/ORNLDAAC/1106",
+      "bureauCode": ["026:00"],
+      "issued": "2012-07-19",
+      "temporal": "1970-01-01T00:00:00Z/2009-12-31T23:59:59Z",
+      "@type": "dcat:Dataset",
+      "modified": "2021-05-20",
+      "keyword": ["earth science", "biosphere", "vegetation"],
+      "contactPoint": {
+        "@type": "vcard:Contact",
+        "fn": "undefined",
+        "hasEmail": "mailto:uso@daac.ornl.gov"
+      },
+      "publisher": {
+        "@type": "org:Organization",
+        "name": "ORNL_DAAC"
+      },
+      "identifier": "C179003380-ORNL_DAAC",
+      "description": "This data set provides carbon (C), nitrogen (N), phosphorus (P), potassium (K), calcium (Ca), and magnesium (Mg) concentrations in green and senesced leaves. Vegetation characteristics reported include species growth habit, leaf area, mass, and mass loss with senescence. The data were compiled from 86 selected studies in 31 countries, and resulted in approximately 1,000 data points for both green and senesced leaves from woody and non-woody vegetation as described in Vergutz et al (2012). The studies were conducted from 1970-2009. There are two comma-delimited data files with this data set.",
+      "title": "A Global Database of Carbon and Nutrient Concentrations of Green and Senesced Leaves",
+      "programCode": ["026:001"],
+      "distribution": [
+        {
+          "mediaType": "text/html",
+          "downloadURL": "https://scholar.google.com/scholar?q=10.3334%2FORNLDAAC%2F1106",
+          "description": "Search results for publications that cite this dataset by its DOI.",
+          "@type": "dcat:Distribution",
+          "title": "Google Scholar search results"
+        },
+        {
+          "mediaType": "text/html",
+          "downloadURL": "https://daac.ornl.gov/daacdata/global_vegetation/Leaf_Carbon_Nutrients//",
+          "description": "This link allows direct data access via Earthdata login",
+          "@type": "dcat:Distribution",
+          "title": "Download this dataset"
+        },
+        {
+          "mediaType": "text/html",
+          "downloadURL": "https://daac.ornl.gov/VEGETATION/guides/Leaf_carbon_nutrients.html",
+          "description": "ORNL DAAC Data Set Documentation",
+          "@type": "dcat:Distribution",
+          "title": "View documentation related to this dataset"
+        },
+        {
+          "mediaType": "text/html",
+          "downloadURL": "https://doi.org/10.3334/ORNLDAAC/1106",
+          "description": "Data set Landing Page DOI URL",
+          "@type": "dcat:Distribution",
+          "title": "This dataset's landing page"
+        },
+        {
+          "mediaType": "application/pdf",
+          "downloadURL": "https://daac.ornl.gov/daacdata/global_vegetation/Leaf_Carbon_Nutrients/comp/Leaf_carbon_nutrients.pdf",
+          "description": "Data Set Documentation",
+          "@type": "dcat:Distribution",
+          "title": "View documentation related to this dataset"
+        },
+        {
+          "mediaType": "image/png",
+          "downloadURL": "https://daac.ornl.gov/VEGETATION/guides/Leaf_Carbon_Nutrients_Figure1_rev2.png",
+          "description": "Global distribution of study locations.",
+          "@type": "dcat:Distribution",
+          "title": "Get a related visualization"
+        }
+      ],
+      "spatial": "-159.7 -50.0 176.9 68.5",
+      "theme": ["Vegetation", "geospatial"]
+    },
+
+    {
+      "audience": [
+        { "field": "research", "speciality": "physics" },
+        { "field": "research", "speciality": "geology" }
+      ],
+      "language": [{ "type": "normal", "name": "english" }],
+      "parameter": ["wavelengths"],
+
+      "accessLevel": "public",
+      "landingPage": "https://doi.org/10.5067/MODIS/MOD02HKM.006",
+      "bureauCode": ["026:00"],
+      "issued": "2012-11-05",
+      "temporal": "2000-02-24T00:00:00Z/2019-12-12T00:00:00Z",
+      "@type": "dcat:Dataset",
+      "modified": "2019-12-13",
+      "keyword": [
+        "earth science",
+        "spectral/engineering",
+        "ngda",
+        "national geospatial data asset",
+        "infrared wavelengths",
+        "visible wavelengths"
+      ],
+      "contactPoint": {
+        "@type": "vcard:Contact",
+        "fn": "ASAD ULLAH",
+        "hasEmail": "mailto:MODAPSUSO@lists.nasa.gov"
+      },
+      "publisher": {
+        "@type": "org:Organization",
+        "name": "Not provided"
+      },
+      "identifier": "C203234490-LAADS",
+      "description": "The MODIS/Terra Calibrated Radiances 5-Min L1B Swath 500m  (MOD02HKM) data set contains calibrated and geolocated at-aperture radiances for 7 discrete bands located in the 0.45 to 2.20 micron region of the electromagnetic spectrum. These data are generated from the MODIS Level 1A scans of raw radiance and in the process converted to geophysical units of W/(m^2 um sr). In addition, the Earth Bi-directional Reflectance Distribution Function (BRDF) may be determined for these solar reflective bands through knowledge of the solar irradiance (e.g., determined from MODIS solar diffuser data, and from the target illumination geometry).  Additional data are provided including quality flags, error estimates and calibration data.\n\nVisible, shortwave infrared, and near infrared measurements are only made during the daytime, while radiances for the thermal infrared region (bands 20-25, 27-36) are measured continuously.\n            \nChannels 1 and 2 have 250 m resolution, channels 3 through 7 have 500 m resolution. However, for the MODIS L1B 500 m product, the 250 m band radiance data and their associated uncertainties have been aggregated to 500m resolution. Thus the entire channel data set has been co-registered to the same spatial scale in the 500 m product. Separate L1B products are available for the 250 m resolution channels (MOD02QKM) and 1 km resolution channels (MOD021KM). For the latter product, the 250 m and 500 m channel data (bands 1 through 7) have been aggregated into equivalent 1 km pixel values.\n            \nSpatial resolution for pixels at nadir is 500 km, degrading to 2.4 km in the along-scan direction at the scan extremes. However, thanks to the overlapping of consecutive swaths and respectively pixels there, the resulting resolution at the scan extremes is about 1 km. A 55 degree scanning pattern at the EOS orbit of 705 km results in a 2330 km orbital swath width and provides global coverage every one to two days. A single MODIS Level 1B 500 m granule will contain a scene built from 203 scans sampled 2708 times in the cross-track direction, corresponding to approximately 5 minutes worth of data; thus 288 granules will be produced per day. Since an individual MODIS scan will contain 20 along-track spatial elements for the 500 m channels, the scene will be composed of (2708 x 4060) pixels, resulting in a spatial coverage of (2330 km x 2040 km). Due to the MODIS scan geometry, there will be increasing scan overlap beyond about 20 degrees scan angle.      \n\nEnvironmental information derived from MODIS L1B measurements will offer a comprehensive and unprecedented look at terrestrial, atmospheric, and ocean phenomenology for a wide and diverse community of users throughout the world.\n\nSee the MODIS Characterization Support Team webpage for more C6 product information at:\n\nhttps://mcst.gsfc.nasa.gov/l1b/product-information\n\n\nor visit Science Team homepage at:\nhttps://modis.gsfc.nasa.gov/data/dataprod/",
+      "title": "MODIS/Terra Calibrated Radiances 5-Min L1B Swath 500m V006",
+      "programCode": ["026:001"],
+      "distribution": [
+        {
+          "mediaType": "text/html",
+          "downloadURL": "https://scholar.google.com/scholar?q=10.5067%2FMODIS%2FMOD02HKM.006",
+          "description": "Search results for publications that cite this dataset by its DOI.",
+          "@type": "dcat:Distribution",
+          "title": "Google Scholar search results"
+        },
+        {
+          "mediaType": "text/html",
+          "downloadURL": "https://modaps.nascom.nasa.gov/services/about/product_descriptions_terra.html",
+          "description": "Overview of MODIS",
+          "@type": "dcat:Distribution",
+          "title": "View documentation related to this dataset"
+        },
+        {
+          "mediaType": "text/html",
+          "downloadURL": "https://ladsweb.modaps.eosdis.nasa.gov",
+          "description": "Search and order products from LAADS website.",
+          "@type": "dcat:Distribution",
+          "title": "Download this dataset through LAADS"
+        },
+        {
+          "mediaType": "text/html",
+          "downloadURL": "https://ladsweb.modaps.eosdis.nasa.gov/archive/allData/6/MOD02HKM/",
+          "description": "Direct access to MOD02HKM 6 data set.",
+          "@type": "dcat:Distribution",
+          "title": "Download this dataset"
+        },
+        {
+          "mediaType": "text/html",
+          "downloadURL": "https://mcst.gsfc.nasa.gov/l1b/product-information",
+          "description": "MODIS Level 1B Product Information Page at MCST",
+          "@type": "dcat:Distribution",
+          "title": "View information related to this dataset"
+        }
+      ],
+      "spatial": "-180.0 -90.0 180.0 90.0",
+      "theme": ["Terra", "geospatial"]
+    },
+    {
+      "audience": [
+        { "field": "research", "speciality": "geology" },
+        { "field": "business", "speciality": "agriculture" }
+      ],
+      "language": [{ "type": "normal", "name": "english" }],
+      "parameter": ["precipitation", "water vapor"],
+
+      "accessLevel": "public",
+      "landingPage": "https://doi.org/10.3334/ORNLDAAC/755",
+      "bureauCode": ["026:00"],
+      "citation": "Hely, C., K.K. Caylor, P. Dowty, R.J. Swap, and H.H. Shugart. 2004. SAFARI 2000 Modeled Fuel Load in Southern Africa, 1999-2000. ORNL DAAC, Oak Ridge, Tennessee, USA. http://dx.doi.org/10.3334/ORNLDAAC/755",
+      "issued": "2004-11-01",
+      "temporal": "1999-09-01T00:00:00Z/2000-08-31T23:59:59Z",
+      "@type": "dcat:Dataset",
+      "modified": "2019-04-15",
+      "keyword": [
+        "earth science",
+        "atmosphere",
+        "atmospheric water vapor",
+        "precipitation",
+        "biosphere",
+        "ecological dynamics",
+        "ecosystems",
+        "vegetation"
+      ],
+      "contactPoint": {
+        "@type": "vcard:Contact",
+        "fn": "undefined",
+        "hasEmail": "mailto:uso@daac.ornl.gov"
+      },
+      "publisher": {
+        "@type": "org:Organization",
+        "name": "ORNL_DAAC"
+      },
+      "identifier": "C179003171-ORNL_DAAC",
+      "description": "This data set contains global, spatially explicit (1 km2 grid cells) and temporally explicit (semi-monthly) modeled output of fuel loads over southern Africa. The fuel types considered in the data set are litter (dead tree leaves), dead grass, green grass, and small-diameter twigs. The Production Efficiency Model (PEM) was used to produce the estimated fuel loads for southern Africa for the 1999-2000 growing seasons.",
+      "graphic-preview-description": "Browse Image",
+      "title": "SAFARI 2000 Modeled Fuel Load in Southern Africa, 1999-2000",
+      "graphic-preview-file": "https://daac.ornl.gov/graphics/browse/project/square/safari_logo_square.png",
+      "programCode": ["026:001"],
+      "distribution": [
+        {
+          "mediaType": "text/html",
+          "downloadURL": "https://scholar.google.com/scholar?q=10.3334%2FORNLDAAC%2F755",
+          "description": "Search results for publications that cite this dataset by its DOI.",
+          "@type": "dcat:Distribution",
+          "title": "Google Scholar search results"
+        },
+        {
+          "mediaType": "text/html",
+          "downloadURL": "https://daac.ornl.gov/daacdata/safari2k/regional/fuel_load/",
+          "description": "This link allows direct data access via Earthdata login",
+          "@type": "dcat:Distribution",
+          "title": "Download this dataset"
+        },
+        {
+          "mediaType": "text/html",
+          "downloadURL": "https://daac.ornl.gov/S2K/guides/fuel_load.html",
+          "description": "ORNL DAAC Data Set Documentation",
+          "@type": "dcat:Distribution",
+          "title": "View documentation related to this dataset"
+        },
+        {
+          "mediaType": "text/html",
+          "downloadURL": "https://doi.org/10.3334/ORNLDAAC/755",
+          "description": "Data set Landing Page DOI URL",
+          "@type": "dcat:Distribution",
+          "title": "This dataset's landing page"
+        },
+        {
+          "mediaType": "application/pdf",
+          "downloadURL": "https://daac.ornl.gov/daacdata/safari2k/regional/fuel_load/comp/fuel_load_readme.pdf",
+          "description": "Data Set Documentation",
+          "@type": "dcat:Distribution",
+          "title": "View documentation related to this dataset"
+        },
+        {
+          "mediaType": "image/png",
+          "downloadURL": "https://daac.ornl.gov/graphics/browse/project/square/safari_logo_square.png",
+          "description": "Browse Image",
+          "@type": "dcat:Distribution",
+          "title": "Get a related visualization"
+        }
+      ],
+      "spatial": "5.0 -34.99 42.49 10.0",
+      "theme": ["SAFARI 2000", "geospatial"]
+    },
+    {
+      "audience": [
+        { "field": "research", "speciality": "geology" },
+        { "field": "business", "speciality": "agriculture" },
+        { "field": "research", "speciality": "chemistry" }
+      ],
+      "language": [{ "type": "normal", "name": "english" }],
+      "parameter": ["precipitation", "concentration"],
+
+      "accessLevel": "public",
+      "landingPage": "https://doi.org/10.5067/06YIT7GX74FN",
+      "bureauCode": ["026:00"],
+      "issued": "2019-03-22",
+      "temporal": "2002-09-01T00:00:00Z/2016-08-31T23:59:59Z",
+      "@type": "dcat:Dataset",
+      "modified": "2019-12-13",
+      "references": [
+        "https://doi.org/10.5194/acp-13-12469-2013",
+        "https://doi.org/10.5194/acp-16-5467-2016",
+        "https://doi.org/10.1002/2016GL072305",
+        "https://doi.org/10.1117/1.JRS.8.084994",
+        "https://doi.org/10.1109/TGRS.2002.808236"
+      ],
+      "keyword": [
+        "atmospheric chemistry",
+        "earth science",
+        "national geospatial data asset",
+        "ngda",
+        "atmosphere"
+      ],
+      "contactPoint": {
+        "@type": "vcard:Contact",
+        "fn": "LENA IREDELL",
+        "hasEmail": "mailto:lena.iredell@nasa.gov"
+      },
+      "publisher": {
+        "@type": "org:Organization",
+        "name": "NASA/GSFC/SED/ESD/GCDC/GESDISC"
+      },
+      "identifier": "C1619004533-GES_DISC",
+      "description": "The mass concentration ammonia in the atmosphere, consists of products generated for the study of atmospheric ammonia. Atmospheric ammonia is an important component of the global nitrogen cycle. In the troposphere, ammonia reacts rapidly with acids such as sulfuric and nitric to form fine particulate matter. These ammonium containing aerosols affect Earth's radiative balance, both directly by scattering incoming radiation and indirectly as cloud condensation nuclei. Major sources of atmospheric ammonia involve agricultural activities including animal husbandry, especially concentrated animal feeding operations and fertilizer use. Major sinks of atmospheric ammonia involve dry deposition and wet removal by precipitation, as well as conversion to particulate ammonium by reaction with acids. Measurements of ambient NH3 are sparse, but satellites provide a means to monitor atmospheric composition globally. Using the AIRS/AMSU satellite this algorithm provides monthly measurements of derived atmospheric NH3 for September 2002 through August 2016.",
+      "title": "Atmospheric Composition Ammonia Volume Mixing Ratio L3 (AIRSAC3MNH3 V3) from AIRS/AMSU on NASA Aqua at GES DISC",
+      "programCode": ["026:001"],
+      "distribution": [
+        {
+          "mediaType": "text/html",
+          "downloadURL": "https://scholar.google.com/scholar?q=10.5067%2F06YIT7GX74FN",
+          "description": "Search results for publications that cite this dataset by its DOI.",
+          "@type": "dcat:Distribution",
+          "title": "Google Scholar search results"
+        },
+        {
+          "mediaType": "image/png",
+          "downloadURL": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/Images/AIRSAC3MNH3.v3.png",
+          "description": "Sample plot of mass concentration of ammonia in the atmosphere derived from the AIRS/AMSU satellite data.",
+          "@type": "dcat:Distribution",
+          "title": "Get a related visualization"
+        },
+        {
+          "mediaType": "text/html",
+          "downloadURL": "https://disc.gsfc.nasa.gov/datacollection/AIRSAC3MNH3_3.html",
+          "description": "Access the dataset landing page from the GES DISC website.",
+          "@type": "dcat:Distribution",
+          "title": "This dataset's landing page"
+        },
+        {
+          "mediaType": "text/html",
+          "downloadURL": "https://acdisc.gesdisc.eosdis.nasa.gov/data/Aqua_AIRS_Level3/AIRSAC3MNH3.3/",
+          "description": "Https on line data access",
+          "@type": "dcat:Distribution",
+          "title": "Download this dataset through a directory map"
+        },
+        {
+          "mediaType": "text/html",
+          "downloadURL": "https://acdisc.gsfc.nasa.gov/opendap/Aqua_AIRS_Level3/AIRSAC3MNH3.3/contents.html",
+          "description": "OPenDAP access to Ammonia data",
+          "@type": "dcat:Distribution",
+          "title": "Use OPeNDAP to access the dataset's data"
+        },
+        {
+          "mediaType": "application/pdf",
+          "downloadURL": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/Community/Warner/AIRSAC3MNH3.README.pdf",
+          "description": "Level-3 Atmospheric Composition Volume Mixing Ratio Ammonia README",
+          "@type": "dcat:Distribution",
+          "title": "View this dataset's read me document"
+        },
+        {
+          "mediaType": "text/html",
+          "downloadURL": "https://search.uat.earthdata.nasa.gov/search?q=AIRSAC3MNH3",
+          "description": "Use the Earthdata Search to find and retrieve data sets across multiple data centers.",
+          "@type": "dcat:Distribution",
+          "title": "Download this dataset through Earthdata Search"
+        },
+        {
+          "mediaType": "application/pdf",
+          "downloadURL": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/Community/Warner/Warner_NH3_ATBD_v3.pdf",
+          "description": "Atmospheric Composition Volume Mixing Ratio derived Ammonia ATBD",
+          "@type": "dcat:Distribution",
+          "title": "View this dataset's algorithm theoretical basis document"
+        },
+        {
+          "mediaType": "application/pdf",
+          "downloadURL": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/Community/Warner/AIRSAC3MNH3.UserGuide.pdf",
+          "description": "Level-3 Atmospheric Composition Volume Mixing Ratio Ammonia User Guide",
+          "@type": "dcat:Distribution",
+          "title": "View this dataset's user's guide"
+        }
+      ],
+      "spatial": "-180.0 -90.0 180.0 90.0",
+      "theme": ["Aqua", "geospatial"]
+    },
+    {
+      "audience": [
+        { "field": "research", "speciality": "topography" },
+        { "field": "business", "speciality": "agriculture" },
+        { "field": "research", "speciality": "chemistry" }
+      ],
+      "language": [{ "type": "normal", "name": "english" }],
+      "parameter": ["concentration", "pH", "temperature", "conductivity"],
+
+      "accessLevel": "public",
+      "landingPage": "https://doi.org/10.3334/ORNLDAAC/1227",
+      "bureauCode": ["026:00"],
+      "citation": "Richey, J.E., A.V. Krusche, R.L. Victoria, M.V.R. Ballester, N.K. Leite, B.M. Gomes, M.A. Bolson, S.G. Neto, and A.A. Montebelo. 2014. LBA-ECO CD-06 Biogeochemistry of Ji-Parana River and Tributaries, Brazil: 1999-2003. ORNL DAAC, Oak Ridge, Tennessee, USA. http://dx.doi.org/10.3334/ORNLDAAC/1227",
+      "issued": "2014-06-25",
+      "temporal": "1999-05-24T00:00:00Z/2003-05-20T23:59:59Z",
+      "@type": "dcat:Dataset",
+      "modified": "2019-04-15",
+      "keyword": [
+        "earth science",
+        "land surface",
+        "topography",
+        "terrestrial hydrosphere",
+        "surface water"
+      ],
+      "contactPoint": {
+        "@type": "vcard:Contact",
+        "fn": "undefined",
+        "hasEmail": "mailto:uso@daac.ornl.gov"
+      },
+      "publisher": {
+        "@type": "org:Organization",
+        "name": "ORNL_DAAC"
+      },
+      "identifier": "C179126745-ORNL_DAAC",
+      "description": "This data set provides spatially extensive and temporally intensive surveys of the river biogeochemistry of the Ji-Parana River Basin in Western Amazonia, Rondonia, Brazil. The concentrations of major nutrient ions, dissolved organic and inorganic carbon, pH, temperature, dissolved oxygen, and conductivity were measured in Ji-Parana River and tributary samples at the defined seasonal or monthly intervals. Dominant landuse/landcover classes, slope, and soil cation exchange capacity are included for each of the extensive sampling locations derived from river basin and sub-basin characteristics.Water samples were collected from 1999 to 2003 along the main stem of the Ji-Parana River as well as from the major tributaries including the Urupa. Shapefiles with the boundaries of the major sub-basins of the study area as well as the location of the sample collection points are included for the intensive and extensive sampling campaigns as well as the Urupa River campaign. There are six comma-separated data files (.csv) and five compressed shapefiles (.zip) with this data set.",
+      "graphic-preview-description": "Browse Image",
+      "title": "LBA-ECO CD-06 Biogeochemistry of Ji-Parana River and Tributaries, Brazil: 1999-2003",
+      "graphic-preview-file": "https://daac.ornl.gov/graphics/browse/project/square/lba_logo_square.png",
+      "programCode": ["026:001"],
+      "distribution": [
+        {
+          "mediaType": "text/html",
+          "downloadURL": "https://scholar.google.com/scholar?q=10.3334%2FORNLDAAC%2F1227",
+          "description": "Search results for publications that cite this dataset by its DOI.",
+          "@type": "dcat:Distribution",
+          "title": "Google Scholar search results"
+        },
+        {
+          "mediaType": "text/html",
+          "downloadURL": "https://daac.ornl.gov/daacdata/lba/carbon_dynamics/CD06_BGC_JiParana//",
+          "description": "This link allows direct data access via Earthdata login",
+          "@type": "dcat:Distribution",
+          "title": "Download this dataset"
+        },
+        {
+          "mediaType": "text/html",
+          "downloadURL": "https://daac.ornl.gov/LBA/guides/CD06_BGC_JiParana.html",
+          "description": "ORNL DAAC Data Set Documentation",
+          "@type": "dcat:Distribution",
+          "title": "View documentation related to this dataset"
+        },
+        {
+          "mediaType": "text/html",
+          "downloadURL": "https://doi.org/10.3334/ORNLDAAC/1227",
+          "description": "Data set Landing Page DOI URL",
+          "@type": "dcat:Distribution",
+          "title": "This dataset's landing page"
+        },
+        {
+          "mediaType": "application/pdf",
+          "downloadURL": "https://daac.ornl.gov/daacdata/lba/carbon_dynamics/CD06_BGC_JiParana//comp/CD06_BGC_JiParana.pdf",
+          "description": "Data Set Documentation",
+          "@type": "dcat:Distribution",
+          "title": "View documentation related to this dataset"
+        },
+        {
+          "mediaType": "text/csv",
+          "downloadURL": "https://daac.ornl.gov/daacdata/lba/carbon_dynamics/CD06_BGC_JiParana//comp/CD06_BGC_JP_sites_coordinates.csv",
+          "description": "Data Set Documentation",
+          "@type": "dcat:Distribution",
+          "title": "View documentation related to this dataset"
+        },
+        {
+          "mediaType": "image/png",
+          "downloadURL": "https://daac.ornl.gov/graphics/browse/project/square/lba_logo_square.png",
+          "description": "Browse Image",
+          "@type": "dcat:Distribution",
+          "title": "Get a related visualization"
+        }
+      ],
+      "spatial": "-63.42 -12.93 -60.01 -8.03",
+      "theme": ["LBA-ECO", "geospatial"]
+    },
+    {
+      "audience": [
+        { "field": "education", "speciality": "management" },
+        { "field": "research", "speciality": "management" }
+      ],
+      "language": [{ "type": "normal", "name": "english" }],
+      "parameter": [],
+      "accessLevel": "public",
+      "landingPage": "https://itunes.apple.com/us/itunes-u/nasas-journey-to-project-management/id443158587?i=125444483",
+      "bureauCode": ["026:00"],
+      "issued": "2018-06-25",
+      "@type": "dcat:Dataset",
+      "modified": "2020-01-29",
+      "references": ["http://km.nasa.gov/knowledge-map/"],
+      "keyword": [
+        "leadership",
+        "management",
+        "sharing",
+        "knowledge",
+        "appel",
+        "ebook",
+        "project",
+        "training"
+      ],
+      "contactPoint": {
+        "@type": "vcard:Contact",
+        "fn": "Ed Hoffman",
+        "hasEmail": "mailto:ehoffman@nasa.gov"
+      },
+      "publisher": {
+        "@type": "org:Organization",
+        "name": "National Aeronautics and Space Administration"
+      },
+      "identifier": "NASA-864__2",
+      "description": "NASA's Path to Project Management Excellence eBook. Leadership plays a critical role in the success of today’s programs and projects. In an increasingly global and dynamic project environment, the ability to for organizations to foster and develop project leaders who can lead in and deliver unique, innovative products and missions on time and budget has never been more important.",
+      "title": "Academy of Program/Project & Engineering Leadership: NASA's Path to Project Management Excellence",
+      "programCode": ["026:045"],
+      "distribution": [
+        {
+          "@type": "dcat:Distribution",
+          "downloadURL": "https://itunes.apple.com/us/podcast/pulse-profession-mark-a.-langley/id443158587?i=119925176&mt=2",
+          "mediaType": "application/x-itunes-itlp"
+        }
+      ],
+      "accrualPeriodicity": "irregular",
+      "theme": ["Management/Operations"]
+    },
+    {
+      "audience": [
+        { "field": "education", "speciality": "mathematics" },
+        { "field": "research", "speciality": "mathematics" },
+        { "field": "research", "speciality": "physics" },
+        { "field": "education", "speciality": "physics" }
+      ],
+      "language": [{ "type": "normal", "name": "english" }],
+      "parameter": [],
+      "accessLevel": "public",
+      "landingPage": "https://doi.org/10.5067/MODIS/MCD43D43.006",
+      "bureauCode": ["026:00"],
+      "issued": "2014-07-02",
+      "temporal": "2000-02-16T00:00:00Z/2020-12-07T00:00:00Z",
+      "@type": "dcat:Dataset",
+      "modified": "2021-05-20",
+      "keyword": [
+        "earth science",
+        "land surface",
+        "surface radiative properties",
+        "ngda",
+        "national geospatial data asset"
+      ],
+      "contactPoint": {
+        "@type": "vcard:Contact",
+        "fn": "undefined",
+        "hasEmail": "mailto:lpdaac@usgs.gov"
+      },
+      "publisher": { "@type": "org:Organization", "name": "LP DAAC" },
+      "identifier": "C1000000427-LPDAAC_ECS",
+      "description": "The MCD43D43 Version 6 Bidirectional Reflectance Distribution Function and Albedo (BRDF/Albedo) Black-Sky Albedo dataset is produced daily using 16 days of Terra and Aqua Moderate Resolution Imaging Spectroradiometer (MODIS) data at 30 arc second (1,000 meter (m)) resolution. Data are temporally weighted to the ninth day which is reflected in the Julian date in the file name. This Climate Modeling Grid (CMG) product covers the entire globe for use in climate simulation models. Due to the large file size, each MCD43D product contains just one data layer. \r\n\r\nMCD43D42 through MCD43D61 are the albedo products of the MCD43D BRDF/Albedo product suite. There are 10 black-sky albedo and 10 white-sky albedo layers representing MODIS bands 1 through 7 and the visible, near infrared (NIR), and shortwave bands. The black-sky albedo (directional hemispherical reflectance) is defined as albedo in the absence of a diffuse component and is a function of solar zenith angle. White-sky albedo (bihemispherical reflectance) is defined as albedo in the absence of a direct component when the diffuse component is isotropic. \r\n\r\nMCD43D43 is the black-sky albedo for MODIS band 2. \r\n\r\nUsers are urged to use the band specific quality flags to isolate the highest quality full inversion results for their own science applications (https://www.umb.edu/spectralmass/terra_aqua_modis/v006).\r\n\r\nImprovements/Changes from Previous Versions \r\n\r\n*\tObservations are weighted to estimate the BRDF/Albedo on the ninth day of the 16-day period.\r\n*\tMCD43 products use the snow status weighted to the ninth day instead of the majority snow/no-snow observations from the 16-day period.\r\n*\tBetter quality at high latitudes from use of all available observations for the acquisition period. Collection 5 used only four observations per day.\r\n*\tThe MCD43 products use L2G-lite surface reflectance as input.\r\n*\tWhen there are insufficient high quality reflectances, a database with archetypal BRDF parameters is used to supplement the observational data and perform a lower quality magnitude inversion. This database is continually updated with the latest full inversion retrieval for each pixel.\r\n*\tCMG Albedo is estimated using all the clear-sky observations within the 1,000 m grid for MCD43C as opposed to aggregating from the 500 m albedo.\r\n\r\nImportant Quality Information\r\nThe incorrect representation of the aerosol quantities (low average high) in the C6 MYD09 and MOD09 surface reflectance products may have impacted down stream products particularly over arid bright surfaces (https://landweb.modaps.eosdis.nasa.gov/cgi-bin/QA_WWW/displayCase.cgi?esdt=MOD09&caseNum=PM_MOD09_20010&caseLocation=cases_data&type=C6). This (and a few other issues) have been corrected for C6.1. Therefore users should avoid substantive use of the C6 MCD43 products and wait for the C6.1 products. In any event, users are always strongly encouraged to download and use the extensive QA data provided in MCD43A2, in addition to the briefer mandatory QAs provided as part of the MCD43A1, 3, and 4 products.",
+      "title": "MODIS/Terra+Aqua BRDF/Albedo Black Sky Albedo Band2 Daily L3 Global 30ArcSec CMG V006",
+      "programCode": ["026:001"],
+      "distribution": [
+        {
+          "mediaType": "text/html",
+          "downloadURL": "https://scholar.google.com/scholar?q=10.5067%2FMODIS%2FMCD43D43.006",
+          "description": "Search results for publications that cite this dataset by its DOI.",
+          "@type": "dcat:Distribution",
+          "title": "Google Scholar search results"
+        },
+        {
+          "mediaType": "text/html",
+          "downloadURL": "http://landweb.nascom.nasa.gov/cgi-bin/QA_WWW/qaFlagPage.cgi?sat=aquaTerra&ver=C6",
+          "description": "Product Quality Documentation",
+          "@type": "dcat:Distribution",
+          "title": "View this dataset's product quality assessment"
+        },
+        {
+          "mediaType": "text/html",
+          "downloadURL": "https://doi.org/10.5067/MODIS/MCD43D43.006",
+          "description": "The LP DAAC product page provides information on Science Data Set layers and links for user guides, ATBDs, data access, tools, customer support, etc.",
+          "@type": "dcat:Distribution",
+          "title": "This dataset's landing page"
+        },
+        {
+          "mediaType": "text/html",
+          "downloadURL": "http://https://e4ftl01.cr.usgs.gov/MOTA/MCD43D43.006/",
+          "description": "LP DAAC Data Pool provides direct access to available products via HTTPS.",
+          "@type": "dcat:Distribution",
+          "title": "Download this dataset through a directory map"
+        },
+        {
+          "mediaType": "text/html",
+          "downloadURL": "http://earthexplorer.usgs.gov/",
+          "description": "USGS EarthExplorer provides users the ability to query, search, and order products available from the LP DAAC.",
+          "@type": "dcat:Distribution",
+          "title": "Download this dataset through USGS Earth Explorer"
+        },
+        {
+          "mediaType": "text/html",
+          "downloadURL": "https://lpdaac.usgs.gov/",
+          "description": "The LP DAAC website provides detailed information on discovery, distribution, access, and support of land data products.",
+          "@type": "dcat:Distribution",
+          "title": "The dataset's project home page"
+        },
+        {
+          "mediaType": "text/html",
+          "downloadURL": "https://search.earthdata.nasa.gov/search?q=C1000000427-LPDAAC_ECS",
+          "description": "Earthdata Search allows users to search, discover, visualize, refine, and access NASA Earth Observation data.",
+          "@type": "dcat:Distribution",
+          "title": "Download this dataset through Earthdata Search"
+        },
+        {
+          "mediaType": "text/html",
+          "downloadURL": "https://opendap.cr.usgs.gov/opendap/hyrax/MCD43D43.006/contents.html",
+          "description": "OPeNDAP provides direct access to data via HTTPS.",
+          "@type": "dcat:Distribution",
+          "title": "Use OPeNDAP to access the dataset's data"
+        },
+        {
+          "mediaType": "text/html",
+          "downloadURL": "https://www.umb.edu/spectralmass/terra_aqua_modis/v006",
+          "description": "The technical information in the User's Guide enables users to interpret and use the data products.",
+          "@type": "dcat:Distribution",
+          "title": "View this dataset's user's guide"
+        },
+        {
+          "mediaType": "application/pdf",
+          "downloadURL": "https://lpdaac.usgs.gov/documents/97/MCD43_ATBD.pdf",
+          "description": "The ATBD provides physical theory and mathematical procedures for the calculations used to produce the data products.",
+          "@type": "dcat:Distribution",
+          "title": "View this dataset's algorithm theoretical basis document"
+        },
+        {
+          "mediaType": "text/html",
+          "downloadURL": "https://ladsweb.modaps.eosdis.nasa.gov/filespec/MODIS/6/MCD43D43",
+          "description": "The File Specification provides a description of the product file including Scientific Data Sets and their attributes.",
+          "@type": "dcat:Distribution",
+          "title": "View documentation related to this dataset"
+        }
+      ],
+      "spatial": "-180.0 -90.0 180.0 90.0",
+      "theme": ["Terra", "Aqua", "geospatial"]
+    },
+    {
+      "audience": [
+        { "field": "education", "speciality": "astronomy" },
+        { "field": "research", "speciality": "astronomy" }
+      ],
+      "language": [{ "type": "normal", "name": "english" }],
+      "accessLevel": "public",
+      "landingPage": "https://pds.nasa.gov/ds-view/pds/viewDataset.jsp?dsid=EAR-A-3-RDR-OCCULTATIONS-V14.0",
+      "bureauCode": ["026:00"],
+      "issued": "2018-06-26",
+      "@type": "dcat:Dataset",
+      "modified": "2020-01-29",
+      "references": ["https://pds.nasa.gov"],
+      "keyword": ["asteroid", "satellite", "support archives"],
+      "contactPoint": {
+        "@type": "vcard:Contact",
+        "fn": "Thomas Morgan",
+        "hasEmail": "mailto:thomas.h.morgan@nasa.gov"
+      },
+      "publisher": {
+        "@type": "org:Organization",
+        "name": "National Aeronautics and Space Administration"
+      },
+      "identifier": "urn:nasa:pds:context_pds3:data_set:data_set.ear-a-3-rdr-occultations-v14.0",
+      "description": "This data set is intended to include all reported timings of observed asteroid, planet, and planetary satellite occultation events as well as occultation axes derived from those timings by David W. Dunham and David Herald. This version is complete through the end of 2015.",
+      "title": "ASTEROID OCCULTATIONS V14.0",
+      "programCode": ["026:005"],
+      "theme": ["Earth Science"],
+      "accrualPeriodicity": "irregular"
+    },
+    {
+        "audience": [
+            { "field": "education", "speciality": "geography" },
+            { "field": "research", "speciality": "geography" }
+          ],
+      "language": [{ "type": "normal", "name": "english" }],
+      "accessLevel": "public",
+      "landingPage": "https://doi.org/10.7927/H4736NT2",
+      "bureauCode": ["026:00"],
+      "citation": "Center for Hazards and Risk Research - CHRR - Columbia University, Center for International Earth Science Information Network - CIESIN - Columbia University, and International Bank for Reconstruction and Development - The World Bank. 2005-12-31. Global Volcano Mortality Risks and Distribution. Version 1.00. Palisades, NY. Archived by National Aeronautics and Space Administration, U.S. Government, Center for Hazards and Risk Research (CHRR)/Columbia University. https://doi.org/10.7927/H4736NT2. https://doi.org/10.7927/H4736NT2.",
+      "issued": "2005-12-31",
+      "temporal": "2000-01-01T00:00:00Z/2000-12-31T00:00:00Z",
+      "@type": "dcat:Dataset",
+      "modified": "2005-12-31",
+      "references": [
+        "https://doi.org/10.7927/H4BR8Q45",
+        "https://doi.org/10.7927/H4ZK5DMF",
+        "https://doi.org/10.7927/H43B5X3R"
+      ],
+      "keyword": [
+        "earth science",
+        "population",
+        "natural hazards",
+        "human dimensions"
+      ],
+      "contactPoint": {
+        "@type": "vcard:Contact",
+        "fn": "undefined",
+        "hasEmail": "mailto:metadata@ciesin.columbia.edu"
+      },
+      "publisher": { "@type": "org:Organization", "name": "SEDAC" },
+      "identifier": "C179001787-SEDAC",
+      "description": "Global Volcano Mortality Risks and Distribution is a 2.5 minute grid representing global volcano mortality risks. The data set was constructed using historical hazard-specific mortality loss data from the Emergency Events Database (EM-DAT) maintained by the Centre for Research on the Epidemiology of Disasters (CRED), subnational year 2000 population estimates from Gridded Population of the World, Version 3 (GPWv3), and volcano hazard data from the Global Volcano Hazard Frequency and Distribution data set. Estimates were made as to the mortality numbers associated with volcano hazard. In turn, these mortality estimates were classified into deciles, 10 class of an approximately equal number of grid cells of increasing mortality risk. This data set is the result of collaboration among the Columbia University Center for Hazards and Risk Research (CHRR), International Bank for Reconstruction and Development/The World Bank, and Columbia University Center for International Earth Science Information Network (CIESIN).",
+      "release-place": "Palisades, NY",
+      "graphic-preview-description": "Maps Download Page",
+      "creator": "Center for Hazards and Risk Research - CHRR - Columbia University, Center for International Earth Science Information Network - CIESIN - Columbia University, and International Bank for Reconstruction and Development - The World Bank",
+      "title": "Global Volcano Mortality Risks and Distribution",
+      "graphic-preview-file": "https://sedac.ciesin.columbia.edu/data/set/ndh-volcano-mortality-risks-distribution/maps",
+      "programCode": ["026:001"],
+      "distribution": [
+        {
+          "mediaType": "text/html",
+          "downloadURL": "https://scholar.google.com/scholar?q=10.7927%2FH4736NT2",
+          "description": "Search results for publications that cite this dataset by its DOI.",
+          "@type": "dcat:Distribution",
+          "title": "Google Scholar search results"
+        },
+        {
+          "mediaType": "image/jpeg",
+          "downloadURL": "https://sedac.ciesin.columbia.edu/downloads/maps/ndh/ndh-volcano-mortality-risks-distribution/volcano-mortality-thumbnail.jpg",
+          "description": "Sample browse graphic of the data set.",
+          "@type": "dcat:Distribution",
+          "title": "Get a related visualization"
+        },
+        {
+          "mediaType": "text/html",
+          "downloadURL": "https://sedac.ciesin.columbia.edu/data/set/ndh-volcano-mortality-risks-distribution/data-download",
+          "description": "Data Download Page",
+          "@type": "dcat:Distribution",
+          "title": "Download this dataset"
+        },
+        {
+          "mediaType": "text/html",
+          "downloadURL": "https://sedac.ciesin.columbia.edu/data/set/ndh-volcano-mortality-risks-distribution/maps",
+          "description": "Maps Download Page",
+          "@type": "dcat:Distribution",
+          "title": "Get a related map visualization"
+        },
+        {
+          "mediaType": "text/html",
+          "downloadURL": "https://sedac.ciesin.columbia.edu/data/set/ndh-volcano-mortality-risks-distribution/maps/services",
+          "description": "Web Map Service Page",
+          "@type": "dcat:Distribution",
+          "title": "Use Web Map Service (WMS) to download the dataset's data"
+        },
+        {
+          "mediaType": "text/html",
+          "downloadURL": "https://sedac.ciesin.columbia.edu/data/set/ndh-volcano-mortality-risks-distribution",
+          "description": "Data Set Overview Page",
+          "@type": "dcat:Distribution",
+          "title": "View documentation related to this dataset"
+        }
+      ],
+      "spatial": "-180.0 -58.0 180.0 85.0",
+      "theme": ["NDH", "geospatial"]
+    
+    },
+    {
+      "audience": [
+        { "field": "education", "speciality": "astronomy" },
+        { "field": "research", "speciality": "astronomy" }
+      ],
+      "language": [{ "type": "normal", "name": "english" }],
+      "accessLevel": "public",
+      "landingPage": "https://pds.nasa.gov/ds-view/pds/viewDataset.jsp?dsid=EAR-A-3-RDR-OCCULTATIONS-V14.0",
+      "bureauCode": ["026:00"],
+      "issued": "2018-06-26",
+      "@type": "dcat:Dataset",
+      "modified": "2020-01-29",
+      "references": ["https://pds.nasa.gov"],
+      "keyword": ["mars", "satellite", "support archives"],
+      "contactPoint": {
+        "@type": "vcard:Contact",
+        "fn": "Thomas Morgan",
+        "hasEmail": "mailto:thomas.h.morgan@nasa.gov"
+      },
+      "publisher": {
+        "@type": "org:Organization",
+        "name": "National Aeronautics and Space Administration"
+      },
+      "identifier": "urn:nasa:pds:context_pds3:data_set:data_set.ear-a-3-rdr-occultations-v14.0",
+      "description": "This data set is intended to include all reported timings of observed asteroid, planet, and planetary satellite occultation events as well as occultation axes derived from those timings by David W. Dunham and David Herald. This version is complete through the end of 2015.",
+      "title": "ASTEROID OCCULTATIONS V14.0",
+      "programCode": ["026:005"],
+      "theme": ["Earth Science"],
+      "accrualPeriodicity": "irregular"
+    },
+    {
+        "audience": [
+            { "field": "education", "speciality": "geography" },
+            { "field": "research", "speciality": "astronomy" },
+            { "field": "education", "speciality": "astronomy" },
+            { "field": "art","speciality":null }
+
+          ],
+      "language": [{ "type": "normal", "name": "english" }],
+      "accessLevel": "public",
+      "landingPage": "https://doi.org/10.7927/H4736NT2",
+      "bureauCode": ["026:00"],
+      "citation": "Center for Hazards and Risk Research - CHRR - Columbia University, Center for International Earth Science Information Network - CIESIN - Columbia University, and International Bank for Reconstruction and Development - The World Bank. 2005-12-31. Global Volcano Mortality Risks and Distribution. Version 1.00. Palisades, NY. Archived by National Aeronautics and Space Administration, U.S. Government, Center for Hazards and Risk Research (CHRR)/Columbia University. https://doi.org/10.7927/H4736NT2. https://doi.org/10.7927/H4736NT2.",
+      "issued": "2005-12-31",
+      "temporal": "2000-01-01T00:00:00Z/2000-12-31T00:00:00Z",
+      "@type": "dcat:Dataset",
+      "modified": "2005-12-31",
+      "references": [
+        "https://doi.org/10.7927/H4BR8Q45",
+        "https://doi.org/10.7927/H4ZK5DMF",
+        "https://doi.org/10.7927/H43B5X3R"
+      ],
+      "keyword": [
+        "mars",
+        "perseverance",
+        "curiosity",
+        "art"
+      ],
+ 
+      "publisher": { "@type": "org:Organization", "name": "NASA" },
+
+      "description": "those images were token during perseverance mission on 2021",
+     
+      "title": "mars curiosity image gallery",
+
+      "distribution": [
+        {
+          "mediaType": "image/html",
+          "downloadURL": "https://www.nasa.gov/mission_pages/msl/images/index.html",
+          "description": "those images were token during perseverance mission on 2021 ",
+          "@type": "dcat:Distribution",
+          "title": "Google Scholar search results"
+        }
+      ],
+
+      "theme": ["mars", "space-exploration"]
+    
+    },
+    {
+        "audience": [
+            { "field": "education", "speciality": "geography" },
+            { "field": "research", "speciality": "astronomy" },
+            { "field": "education", "speciality": "astronomy" },
+            { "field": "art","speciality":null }
+
+          ],
+      "language": [{ "type": "normal", "name": "english" }],
+      "accessLevel": "public",
+      "landingPage": "https://doi.org/10.7927/H4736NT2",
+      "bureauCode": ["026:00"],
+      "citation": "Center for Hazards and Risk Research - CHRR - Columbia University, Center for International Earth Science Information Network - CIESIN - Columbia University, and International Bank for Reconstruction and Development - The World Bank. 2005-12-31. Global Volcano Mortality Risks and Distribution. Version 1.00. Palisades, NY. Archived by National Aeronautics and Space Administration, U.S. Government, Center for Hazards and Risk Research (CHRR)/Columbia University. https://doi.org/10.7927/H4736NT2. https://doi.org/10.7927/H4736NT2.",
+      "issued": "2005-12-31",
+      "temporal": "2000-01-01T00:00:00Z/2000-12-31T00:00:00Z",
+      "@type": "dcat:Dataset",
+      "modified": "2005-12-31",
+      "references": [
+        "https://doi.org/10.7927/H4BR8Q45",
+        "https://doi.org/10.7927/H4ZK5DMF",
+        "https://doi.org/10.7927/H43B5X3R"
+      ],
+      "keyword": [
+          "GreeLand"
+  
+        
+      ],
+ 
+      "publisher": { "@type": "org:Organization", "name": "NASA" },
+
+      "description":    "Baffin Bay, Greenland: A Historical Perspective",
+     
+      "title":   "Baffin Bay, Greenland: A Historical Perspective",
+
+      "distribution": [
+        {
+          "mediaType": "image/html",
+          "downloadURL": "https://www.nasa.gov/multimedia/imagegallery/iotd.html",
+          "description": "those images were token during perseverance mission on 2021 ",
+          "@type": "dcat:Distribution",
+          "title": "Google Scholar search results"
+        }
+      ],
+
+      "theme": ["land", "earth"]
+    
+    }
+    ,
+    {
+        "audience": [
+            { "field": "education", "speciality": "geography" },
+            { "field": "research", "speciality": "astronomy" },
+            { "field": "education", "speciality": "astronomy" },
+            { "field": "art","speciality":null }
+
+          ],
+      "language": [{ "type": "normal", "name": "english" }],
+      "accessLevel": "public",
+      "landingPage": "https://doi.org/10.7927/H4736NT2",
+      "bureauCode": ["026:00"],
+      "citation": "Center for Hazards and Risk Research - CHRR - Columbia University, Center for International Earth Science Information Network - CIESIN - Columbia University, and International Bank for Reconstruction and Development - The World Bank. 2005-12-31. Global Volcano Mortality Risks and Distribution. Version 1.00. Palisades, NY. Archived by National Aeronautics and Space Administration, U.S. Government, Center for Hazards and Risk Research (CHRR)/Columbia University. https://doi.org/10.7927/H4736NT2. https://doi.org/10.7927/H4736NT2.",
+      "issued": "2005-12-31",
+      "temporal": "2000-01-01T00:00:00Z/2000-12-31T00:00:00Z",
+      "@type": "dcat:Dataset",
+      "modified": "2005-12-31",
+      "references": [
+        "https://doi.org/10.7927/H4BR8Q45",
+        "https://doi.org/10.7927/H4ZK5DMF",
+        "https://doi.org/10.7927/H43B5X3R"
+      ],
+      "keyword": [
+          "GreeLand"
+  
+        
+      ],
+ 
+      "publisher": { "@type": "org:Organization", "name": "NASA" },
+
+      "description":    "Baffin Bay, Greenland: A Historical Perspective",
+     
+      "title":   "Baffin Bay, Greenland: A Historical Perspective",
+
+      "distribution": [
+        {
+          "mediaType": "image/html",
+          "downloadURL": "https://www.nasa.gov/multimedia/imagegallery/iotd.html",
+          "description": "those images were token during perseverance mission on 2021 ",
+          "@type": "dcat:Distribution",
+          "title": "Google Scholar search results"
+        }
+      ],
+
+      "theme": ["land", "earth"]
+    
+    },
+    {
+        "audience": [
+            { "field": "education", "speciality": "geography" },
+            { "field": "research", "speciality": "geology" },
+            { "field": "research", "speciality": "meteorology" },
+            { "field": "business", "speciality": "agriculture" }
+
+          ],
+      "language": [{ "type": "normal", "name": "french" }],
+      "parameter":["precipitation","salinity","pressure","temperature"],
+      "accessLevel": "public",
+      "landingPage": "https://www.data.gouv.fr/fr/datasets/copernicus-satellite-sentinel-1a/",
+      "bureauCode": ["026:00"],
+      "citation": "Center for Hazards and Risk Research - CHRR - Columbia University, Center for International Earth Science Information Network - CIESIN - Columbia University, and International Bank for Reconstruction and Development - The World Bank. 2005-12-31. Global Volcano Mortality Risks and Distribution. Version 1.00. Palisades, NY. Archived by National Aeronautics and Space Administration, U.S. Government, Center for Hazards and Risk Research (CHRR)/Columbia University. https://doi.org/10.7927/H4736NT2. https://doi.org/10.7927/H4736NT2.",
+      "issued": "2005-12-31",
+      "temporal": "2000-01-01T00:00:00Z/2000-12-31T00:00:00Z",
+      "@type": "dcat:Dataset",
+      "modified": "2005-12-31",
+      "references": [
+        "https://doi.org/10.7927/H4BR8Q45",
+        "https://doi.org/10.7927/H4ZK5DMF",
+        "https://doi.org/10.7927/H43B5X3R"
+      ],
+      "keyword": [
+          "ocean","land"
+  
+        
+      ],
+ 
+      "publisher": { "@type": "government", "name": "copernicus" },
+
+      "description":    "Le satellite Sentinel 1 est exploité en quatre modes d’imagerie de différentes résolutions (allant jusqu’à une précision de 10 m) et couvertures (pouvant atteindre 250 km), qui permettent une surveillance fiable et répétée de zones très étendues. Il est conçu pour fonctionner sur un mode préprogrammé, non conflictuel, permettant l’acquisition d’images haute résolution de toutes les masses continentales, zones côtières et routes maritimes, et couvrant de «lucarnes» l’ensemble des océans planétaires. Cela garantit la fiabilité nécessaire aux services opérationnels ainsi que la constitution d’archives de données cohérentes sur le long terme pour les applications fondées sur des séries chronologiques longues.",
+     
+      "title":   "Données geologique du copernicus-satellite-sentinel-1a",
+
+      "distribution": [
+        {
+          "mediaType": "text/html",
+          "downloadURL": "https://www.data.gouv.fr/fr/datasets/copernicus-satellite-sentinel-1a/",
+          "description": "those images were token during perseverance mission on 2021 ",
+          "@type": "dcat:Distribution",
+          "title": "Google Scholar search results"
+        }
+      ],
+
+      "theme": ["land", "earth","ocean"]
+    
+    }
+    ,
+    {
+        "audience": [
+            { "field": "programming", "speciality": "development" },
+            { "field": "programming", "speciality": "software" },
+            { "field": "programming", "speciality": "ML" },
+            { "field": "programming", "speciality": "AI" },
+            { "field": "business", "speciality": "defense" },
+            { "field": "business", "speciality": "software" }
+
+            
+
+          ],
+      "language": [{ "type": "normal", "name": "english" },{ "type": "programming", "name": "python" },{ "type": "programming", "name": "javascript" },{ "type": "programming", "name": "java" }],
+      "parameter":[],
+      "accessLevel": "public",
+      "landingPage": "https://code.mil/code.json",
+    
+      "keyword": [
+          "ocean","land"
+  
+        
+      ],
+ 
+      "publisher": { "@type": "agency", "name": "DOD" },
+
+      "description":    "Le satellite Sentinel 1 est exploité en quatre modes d’imagerie de différentes résolutions (allant jusqu’à une précision de 10 m) et couvertures (pouvant atteindre 250 km), qui permettent une surveillance fiable et répétée de zones très étendues. Il est conçu pour fonctionner sur un mode préprogrammé, non conflictuel, permettant l’acquisition d’images haute résolution de toutes les masses continentales, zones côtières et routes maritimes, et couvrant de «lucarnes» l’ensemble des océans planétaires. Cela garantit la fiabilité nécessaire aux services opérationnels ainsi que la constitution d’archives de données cohérentes sur le long terme pour les applications fondées sur des séries chronologiques longues.",
+     
+      "title":   "Données geologique du copernicus-satellite-sentinel-1a",
+
+      "distribution": [
+        {
+          "mediaType": "repo/html",
+          "downloadURL": "https://code.mil/code.json",
+          "description": "Source code for ADL's Open Source Learning Record Store (LRS), it is used to store learning data collected with the Experience API ",
+          "@type": "dcat:Distribution",
+          "title": "Google Scholar search results"
+        }
+      ],
+
+      "theme": ["land", "earth","ocean"]
+    
+    }
+
+  ]
+}

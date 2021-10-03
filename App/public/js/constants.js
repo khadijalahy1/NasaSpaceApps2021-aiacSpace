@@ -6,7 +6,7 @@ const _Filters =
         icon: '/assets/icons/filters/ic_theme.svg',
         color: '#ac963e',
         values: [
-            "geospatial", "jason_3", "ocean", "earth", "space", "vegetation", "aqua", "ecology", "operations", "mars", "defense"
+            "geospatial", "jason-3", "ocean", "earth", "space", "vegetation", "aqua", "ecology", "operations", "mars", "defense"
         ]
     },
 
@@ -16,7 +16,7 @@ const _Filters =
         icon: '/assets/icons/filters/ic_source.svg',
         color: '#b85abe',
         values: [
-            "ob_daac", "nasa", "ornl_daac", "lp_daac", "copernicus"
+            "ob.daac", "nasa", "ornl_daac", "lp daac", "copernicus"
         ]
     },
 
@@ -26,7 +26,7 @@ const _Filters =
         icon: '/assets/icons/filters/ic_param.svg',
         color: '#5ea758',
         values: [
-            "temperature", "density", "salinity", "wavelengths", "ssha", "gps_orbit", "pressure", "radiation", "precipitation", "concentration", "water_vapor", "ph", "conductivity"
+            "temperature", "density", "salinity", "wavelengths", "ssha", "gps orbit", "pressure", "radiation", "precipitation", "concentration", "water vapor", "ph", "conductivity"
         ]
     },
 
@@ -62,7 +62,7 @@ const _Filters =
         icon: '/assets/icons/filters/ic_format.svg',
         color: '#45b2c4',
         values: [
-            "text_html", "text_csv", "image_jpeg", "image_html", "image_png", "application_pdf", "application_msword"
+            "text/html", "text/csv", "image/jpeg", "image/html", "image/png", "application/pdf", "application/msword"
         ]
     },
 
@@ -87,7 +87,7 @@ const _Filters =
             normal: ["english", "french"],
             programming: ["python", "javaScript", "java"]
         }
-    },
+    }
 }
 
 const _FiltersValues = 
@@ -114,7 +114,7 @@ const _FiltersValues =
     geospatial: {
         name: "Geospatial"
     },
-    jason_3: {
+    "jason-3": {
         name: "JASON-3"
     },
     ocean: {
@@ -137,7 +137,7 @@ const _FiltersValues =
     },
 
     // Source
-    ob_daac: {
+    "ob.daac": {
         name: "OB.DAAC"
     }, //attention here!!!
     nasa: {
@@ -146,7 +146,7 @@ const _FiltersValues =
     ornl_daac: {
         name: "ORNL_DAAC"
     },
-    lp_daac: {
+    "lp daac": {
         name: "LP DAAC"
     },
     copernicus: {
@@ -169,7 +169,7 @@ const _FiltersValues =
     ssha: {
         name: "SSHA"
     },
-    gps_orbit: {
+    "gps orbit": {
         name: "GPS orbit"
     },
     pressure: {
@@ -184,7 +184,7 @@ const _FiltersValues =
     concentration: {
         name: "Concentration"
     },
-    water_vapor: {
+    "water vapor": {
         name: "Water vapor"
     },
     ph: {
@@ -260,25 +260,25 @@ const _FiltersValues =
 
 
     // Format
-    text_html: {
+    "text/html": {
         name: "HTML"
     },
-    text_csv: {
+    "text/csv": {
         name: "CSV"
     },
-    image_jpeg: {
+    "image/jpeg": {
         name: "JPEG Image"
     },
-    image_html: {
+    "image/html": {
         name: "Web Image"
     },
-    image_png: {
+    "image/png": {
         name: "PNG Image"
     },
-    application_pdf: {
+    "application/pdf": {
         name: "PDF"
     },
-    application_msword: {
+    "application/msword": {
         name: "MSWord"
     },
 
