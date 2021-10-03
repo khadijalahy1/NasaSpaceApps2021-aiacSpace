@@ -54,7 +54,6 @@ DATA4∀1 is a webApp which is displaying all the filters that the user will nee
 
 
 
-
 **REFERENCES**
 - OSMC - NOAA: https://bit.ly/2N1hZ7E
 - NASA SVS Garbage Patch: https://go.nasa.gov/2O7tyJM 
