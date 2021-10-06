@@ -136,7 +136,7 @@ var cxtmenu = function cxtmenu(params) {
   });
 
   setStyles(parent, {
-    display: 'none',
+    //display: 'none',    
     width: containerSize + 'px',
     height: containerSize + 'px',
     position: 'absolute',
@@ -144,7 +144,9 @@ var cxtmenu = function cxtmenu(params) {
     marginLeft: -options.activePadding + 'px',
     marginTop: -options.activePadding + 'px',
     userSelect: 'none',
-    transition: 'all 350ms'
+    opacity: '0',
+    transform: 'scale(0)',
+    transition: 'opacity 150ms, transform 250ms'
   });
 
   canvas.width = containerSize;
@@ -544,7 +546,9 @@ var cxtmenu = function cxtmenu(params) {
           height: containerSize + 'px',
           display: 'block',
           left: rp.x - r + 'px',
-          top: rp.y - r + 'px'
+          top: rp.y - r + 'px',
+          opacity: '1',
+          transform: 'scale(1)'
         });
         createMenuItems(r, rs);
         queueDrawBg(r, rs);
@@ -636,9 +640,9 @@ var cxtmenu = function cxtmenu(params) {
       queueDrawCommands(rx, ry, r, theta, rs);
     }).on('tapdrag', dragHandler).on('cxttapend tapend', function () {
      
-       parent.style.display = 'none';     
-     //parent.style.opacity = '0';
-     //parent.style.transform = 'scale(0)';
+       //parent.style.display = 'none';     
+      parent.style.opacity = '0';
+      parent.style.transform = 'scale(0)';
 
       if (activeCommandI !== undefined) {
         var select = commands[activeCommandI].select;

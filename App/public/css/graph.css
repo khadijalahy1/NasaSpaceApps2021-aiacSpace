@@ -2,7 +2,7 @@ body {
     display: flex;
     height: 100vh;
     margin: 0;
-    background-image: url(../assets/backgrounds/space2.jpg);
+    background-image: url(../assets/backgrounds/gradient1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     backdrop-filter: brightness(0.5);

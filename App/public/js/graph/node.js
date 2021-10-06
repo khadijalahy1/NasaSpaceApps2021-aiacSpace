@@ -5,6 +5,7 @@
 class Node {
 
   static SelectedNode = null;
+  static HighlightedPath = [];
 
   constructor(filterId, filterValueId, parent = null, showIconAndText = false, select = false) {
 
@@ -93,10 +94,6 @@ class Node {
     return this._query;
   }
 
-  get childGraphNodes() {
-    return cy.collection(this.childNodes.map(e => e.graphNode));
-  }
-
   remove() {
     this.picker.destroy();
     this.graphNode.remove();
@@ -106,12 +103,14 @@ class Node {
 
   onClick() {        
     if(Node.SelectedNode)
-      Node.SelectedNode.dom.children[0].style.boxShadow = "none";
-    this.dom.children[0].style.boxShadow = "0 0 10px 5px #FFF";      
-    Node.SelectedNode = this;        
+    {
+      Node.SelectedNode.dom.children[0].style.boxShadow = "none";      
+    }
 
+    this.dom.children[0].style.boxShadow = "0 0 10px 5px #FFF";          
     Summary.update(this);    
 
+    Node.SelectedNode = this;        
     this.highlighPath();
   }
 
@@ -125,6 +124,16 @@ class Node {
     Cytoscape.DoLayout(this.graphNode);
   }
 
+  onChildForked(childNode) {   
+    let unforkedChilds = cy.collection(this.childNodes.flatMap(e => e === childNode ? [] : e.graphNode));
+    this.automove?.destroy();
+    this.automove = cy.automove({
+      nodesMatching: unforkedChilds,
+      reposition: 'drag',
+      dragWith: this.graphNode,
+    });
+  }
+
   clearChildNodes() {
     if (this.childNodes)
       this.childNodes.forEach(node => node.remove())
@@ -133,18 +142,28 @@ class Node {
     this.childNodes = [];
   }
 
+  setOpacity(opacity) {
+    this.dom.style.opacity = opacity;        
+    this.graphEgde.style({ opacity: opacity });
+  }
+
   highlighPath(tail) {    
     if(tail)
     {            
-      this.childNodes.forEach((node) => {      
-          node.dom.style.opacity = 0.3;        
-          node.graphEgde.style({ opacity: 0.3 });
-      });
-      tail.dom.style.opacity = 1;      
-      tail.graphEgde.style({ opacity: 1 });
+      this.childNodes.forEach(node => node.setOpacity(0.4));            
+      tail.setOpacity(1);
+    }
+    else if(Node.HighlightedPath)
+    {
+      Node.HighlightedPath.forEach(node => node.setOpacity(0.4));
+      Node.HighlightedPath = [];
     }
 
-    this.parent?.highlighPath(this);
+    if(this.parent)
+    {
+      this.parent.highlighPath(this);
+      Node.HighlightedPath.push(this);      
+    }    
   }  
 
   forkOn(filterId) {
@@ -176,11 +195,11 @@ class Node {
       this.childNodes.push(node);
     });
 
-    this.automove = cy.automove({
-      nodesMatching: this.childGraphNodes,
-      reposition: 'drag',
-      dragWith: this.graphNode,
-    });
+    if(this.parent) {
+      this.parent.onChildForked(this);
+    }
+    
+    this.onChildForked(null);
   }
 
   unFork() {
