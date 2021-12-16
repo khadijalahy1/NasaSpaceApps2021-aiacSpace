@@ -41,3 +41,15 @@
 #info td:first-child {
     font-weight: bold;
 }
+
+#visits{
+    position: absolute;
+    background-color: rgb(19 54 86 / 80%);
+    padding: 10px;
+    border-radius: 20px;
+    color: #FFF;
+    font-family: sans-serif;
+    bottom: 0%;
+    left: 0%;
+
+}
