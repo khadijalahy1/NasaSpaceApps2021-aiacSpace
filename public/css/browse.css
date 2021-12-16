@@ -1,0 +1,53 @@
+h2 {
+    text-align: center
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f7f7f7;
+    font-family: sans-serif;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+}
+
+table {
+    width: 90%;
+    border-collapse: collapse;
+
+}
+
+td {
+    text-align: center;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+}
+
+.dataset {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 1px solid gray;
+    margin: 10px;
+    padding: 10px;
+}
+
+.dataset>.title {
+    font-size: large;
+    font-weight: 600;
+    color: #1c6387;
+    margin-bottom: 10px;
+}
+
+.dataset>.desc {
+    height: 50px;
+    overflow: hidden;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>AIACSPACE DATA4∀1 | Home</title>
+    <link rel="stylesheet" href="/css/graph.css">
+    <link rel="stylesheet" href="/css/panels.css">
+</head>
+
+<body>
+    <div id="cy"></div>
+    <div class="panel" id="glossary"></div>
+    <div class="panel" id="info">
+        <table>
+            <tr>
+                <td>Path:</td>
+                <td id="path">All datasets</td>
+            </tr>
+            <tr>
+                <td>Count:</td>
+                <td id="count">-</td>
+            </tr>
+        </table>
+    </div>
+    <div id="visits">Number of visits: <span class="counter" id="counter">...</span></div>
+    <div class="panel" id="poweredby">
+        <span>⚡ Powered by</span>
+        <img src="assets/icons/logos/cytoscape.svg">
+        <a href="https://cytoscape.org/" target="_blank">Cytoscape</a>
+    </div>
+    <div class="panel" id="how-to-open-menu">
+        <div>
+            <img src="assets/gif/how-to-open-menu.gif">
+        </div>
+        <span><b>Right-click</b><br>or <i>hold</i> <b>Left-click</b> to <br>open <b>Filter Menu</b></span>
+    </div>
+    <!-- Cytoscape and Extensions -->    
+    <script src="./js/cytoscape/layout-base.js"></script>
+    <script src="./js/cytoscape/cose-base.js"></script>
+    <script src="./js/cytoscape/cytoscape.min.js"></script>    
+    <script src="./js/cytoscape/cytoscape-fcose.js"></script>
+    <script src="./js/cytoscape/cytoscape.dom.node.js"></script>
+    <script src="./js/cytoscape/cytoscape-cxtmenu.js"></script>
+    <script src="./js/cytoscape/cytoscape-automove.js"></script>    
+    <!-- Scripts -->
+    <script src="./js/graph/utils.js"></script>
+    <script src="./js/graph/filter-picker.js"></script>
+    <script src="./js/graph/node.js"></script>
+    <script src="./js/graph/constants.js"></script>
+    <script src="./js/graph/glossary.js"></script>
+    <script src="./js/graph/summary.js"></script>
+    <script src="./js/graph/script.js"></script>
+    <!-- Counter -->
+    <script src="./js/counter/counter.js"></script>
+
+    <!-- Default Statcounter code for AIACSPACE Data4V1
+        https://data4v1.herokuapp.com/ -->
+    <script type="text/javascript">
+        var sc_project = 12645708;
+        var sc_invisible = 1;
+        var sc_security = "002e6423";
+    </script>
+    <script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script>
+    <noscript>
+        <div class="statcounter"><a title="Web Analytics Made Easy -
+    Statcounter" href="https://statcounter.com/" target="_blank"><img class="statcounter"
+                    src="https://c.statcounter.com/12645708/0/002e6423/1/" alt="Web Analytics Made Easy - Statcounter"
+                    referrerPolicy="no-referrer-when-downgrade"></a></div>
+    </noscript>
+    <!-- End of Statcounter Code -->
+</body>
+
+</html>
