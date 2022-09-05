@@ -49,7 +49,7 @@ Analyzing NASA and other agencies data, we've found that all the data that is av
 
 
 **IMPLEMENTATION**
-DATA4∀1 is a webApp that's displaying space agencies data as a Network.
+DATA4∀1 is a webApp that's displaying space agencies data as a network.
 
 ![Target coasts](./assets/images/demo.PNG)
 ![Target coasts1](./assets/images/browse-page.jpeg)
