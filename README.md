@@ -1,7 +1,7 @@
 # DATA4∀1
 This repo was used to support [our idea](https://2021.spaceappschallenge.org/challenges/statements/ontologies-and-interactive-network-visualizations/teams/aiacspace) for the [NASA Space Apps Challenge 2021](https://2021.spaceappschallenge.org/).
 
-**Live App**: https://data4v1.herokuapp.com/
+**Live App**: https://dataapp102-1de0d4684b4b.herokuapp.com/
 
 ![Logo](./assets/images/header-img.png)
 
